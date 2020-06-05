@@ -2,7 +2,7 @@
 title = "Notes about a next software world"
 subtitle = "An eXtreme DDD approach"
 date = "2020-06-04"
-months = [ "2020-0p6" ]
+months = [ "2020-06" ]
 authors = [ "rafael-luque" ]
 authorPhoto = "rafael-luque.jpg"
 draft = "false"

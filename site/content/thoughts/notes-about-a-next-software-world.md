@@ -1,16 +1,52 @@
 +++
 title = "Notes about a next software world"
 subtitle = "An eXtreme DDD approach"
-date = "2020-06-04"
+date = "2020-06-05"
 months = [ "2020-06" ]
 authors = [ "rafael-luque" ]
 authorPhoto = "rafael-luque.jpg"
 draft = "false"
-tags = [ "osoco", "DDD", "design", "media-for-thought", "object thinking" ]
+tags = [ "blue-plane", "future-software", "vision", "design", "media-for-thought" ]
 summary = ""
 background = "wanderer-over-sea-of-fog.jpg"
 backgroundSummary = "wanderer-over-sea-of-fog.jpg"
 +++
+
+
+In his recently published article *[Bits of History, Words of Advice](https://gbracha.blogspot.com/2020/05/bits-of-history-words-of-advice.html)*, Gilad Bracha tries to answer the question **"Why didn't Smalltalk take over the world?"**. In turn, 
+Allen Wirfs-Brock has posted a nice response in his essay *[The Rise and Fall of Comercial Smalltalk](http//www.wirfs-brock.com/allen/posts/914)* complementing Gilad's reflections. Allen describes the historical context of the *commercial Smalltalk* era (the *[Early History of Smalltalk](http://worrydream.com/EarlyHistoryOfSmalltalk/)* by Alan Kay just finishes when 
+Smalltalk-80 is released to the *wild* world) and several reasons why Smalltalk didn't win. 
+
+Leaving the pragmatical reasons aside, I think the deeper explanation is
+that Smalltalk was invented as a research platform to provide the software foundations for Alan Kay's vision about 
+personal computing &mdash;the [Dynabook](http://www.vpri.org/pdf/hc_pers_comp_for_children.pdf).
+
+Allen's post explains it very clearly:
+
+> Smalltalk wasn’t created to rule the software world, it was created to enable the invention of a new software world.
+
+I started my interest in Smalltalk about 2005 when I read about his idiosyncrasies and ubiquitous influence in the 
+*[Naked Objects](https://www.goodreads.com/book/show/2638796-naked-objects)* book. I have been
+learning and practicing Smalltalk since those days &mdash;using *[Squeak](https://squeak.org/)* 
+and *[Pharo](https://pharo.org/)*&mdash; and finally adopting Pharo Smalltalk into the OSOCO's stack. 
+
+However, as Allen describes, Smalltalk is not only a great environment for general-purpose programming that we can use
+as software consultants, but an exceptional research tool to *invent the future* of software.
+
+I think the exposition to Smalltalk and his 
+[design principles](https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html) made me inevitably 
+think that *[The Computer Revolution Hasn't Happened Yet](http://www.vpri.org/pdf/m2007007a_revolution.pdf)* 
+and an alternative software world is desirable and possible. I've been wandering around this idea since a long
+time ago until last year we started **[Blue Plane](https://blueplane.xyz)**, a very small research initiative
+supported by OSOCO, for long-term thinking and projects about the future of software.
+
+We are still defining our particular vision of a new software world in Blue Plane: What is our goal? What principles will drive our designs? How we imagine the future of software? However, I found some rough notes I wrote in 2016 about these
+ideas. We have read and think a lot about it since 2016, but these notes describe our starting point, and 
+I think they are still fundamentally relevant, so I have decided to publish them now.
+
+<hr class="section-divider"/>
+
+### Introduction
 
 Software industry statistics as a whole have failed to improve much since NATO Software Conference at 1968, 
 when **software engineering** and **scientific management** were introduced as means for resolving 
@@ -51,8 +87,6 @@ programmers to work through every development stage: analysis, specification, de
 implementation, deployment, evolution, etc. at the conceptual level, and explore their dynamic
 models as a thinking and learning tool.
 
-<hr class="section-divider"/>
-
 ### State of the art
 
 Software engineers are little concerned with the representation and processing of domain knowledge
@@ -86,7 +120,7 @@ withouth getting much real benefits at the end.
 In our opinion, DDD has laid out some useful ideas and practices. However, we could try to take the
 DDD phylosophy and values until their last consequences in a kind of **eXtreme DDD** mindset.
 
-### Hypothesis
+### Some Hypothesis of Work
 
 It is safe to say that we all share a feeling of unease as far as the general state of software is
 concerned: development is difficult, achieving correctness is difficult, levels of software reuse are low,
@@ -97,7 +131,7 @@ that we need to be bolder in interpreting the original vision of the object thin
 
 An argument can be made that the contemporary mainstream understanding of objects is but a pale shadow 
 of the original idea. Further, it can be argued that the mainstream understanding of objects is, in practice, 
-antithetical to the original intent (David West, Object Thinking).
+antithetical to the original intent (reference *Object Thinking* by David West here).
 
 We could identify the some working hypothesis to implement our vision.
 
@@ -133,7 +167,7 @@ running and evolving to be able to fully understand its dynamics.
 In summary, our vision argue that we should revisit our traditional programming paradigms to
 address these issues.
 
-### Challenges
+### Main Challenges
 
 Finally, we could propose some research challenges:
 
@@ -144,6 +178,9 @@ working permanently within a "pure" conceptual modeling environment. This concep
 
 3. Experiment with new media for working with dynamic and powerful representations to think and learn about our software systems.
 
+<hr class="section-divider"/>
+
+Thanks to Javier Luque, Milton Lopez, Tudor Gîrba, Shalabh Chaturvedi, Marcel Wiher and Joël Franusic for their corrections and feedback on the draft of this post.
 
 ### References
 

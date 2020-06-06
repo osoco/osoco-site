@@ -13,7 +13,11 @@ backgroundSummary = "wanderer-over-sea-of-fog.jpg"
 +++
 
 In his recently published article *[Bits of History, Words of Advice](https://gbracha.blogspot.com/2020/05/bits-of-history-words-of-advice.html)*, Gilad Bracha tries to answer the question **"Why didn't Smalltalk take over the world?"**. In turn, 
-Allen Wirfs-Brock has posted a nice response in his essay *[The Rise and Fall of Comercial Smalltalk](http//www.wirfs-brock.com/allen/posts/914)* complementing Gilad's reflections. Allen describes the historical context of the *commercial Smalltalk* era (the *[Early History of Smalltalk](http://worrydream.com/EarlyHistoryOfSmalltalk/)* by Alan Kay just finishes when 
+Allen Wirfs-Brock has posted a nice response in his essay *[The Rise and Fall of Comercial Smalltalk](http//www.wirfs-brock.com/allen/posts/914)* complementing Gilad's reflections. 
+
+{{< tweet 1267949466767618048 >}}
+
+Allen describes the historical context of the *commercial Smalltalk* era (the *[Early History of Smalltalk](http://worrydream.com/EarlyHistoryOfSmalltalk/)* by Alan Kay just finishes when 
 Smalltalk-80 is released to the *wild* world) and several reasons why Smalltalk didn't win. 
 
 Leaving the pragmatical reasons aside, I think the deeper explanation is

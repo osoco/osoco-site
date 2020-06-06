@@ -6,12 +6,11 @@ months = [ "2020-06" ]
 authors = [ "rafael-luque" ]
 authorPhoto = "rafael-luque.jpg"
 draft = "false"
-tags = [ "blue-plane", "future-software", "vision", "design", "media-for-thought" ]
+tags = [ "blue-plane", "osoco", "future-software", "vision", "design", "media-for-thought" ]
 summary = ""
 background = "wanderer-over-sea-of-fog.jpg"
 backgroundSummary = "wanderer-over-sea-of-fog.jpg"
 +++
-
 
 In his recently published article *[Bits of History, Words of Advice](https://gbracha.blogspot.com/2020/05/bits-of-history-words-of-advice.html)*, Gilad Bracha tries to answer the question **"Why didn't Smalltalk take over the world?"**. In turn, 
 Allen Wirfs-Brock has posted a nice response in his essay *[The Rise and Fall of Comercial Smalltalk](http//www.wirfs-brock.com/allen/posts/914)* complementing Gilad's reflections. Allen describes the historical context of the *commercial Smalltalk* era (the *[Early History of Smalltalk](http://worrydream.com/EarlyHistoryOfSmalltalk/)* by Alan Kay just finishes when 
@@ -120,7 +119,7 @@ withouth getting much real benefits at the end.
 In our opinion, DDD has laid out some useful ideas and practices. However, we could try to take the
 DDD phylosophy and values until their last consequences in a kind of **eXtreme DDD** mindset.
 
-### Some Hypothesis of Work
+### Some hypothesis of work
 
 It is safe to say that we all share a feeling of unease as far as the general state of software is
 concerned: development is difficult, achieving correctness is difficult, levels of software reuse are low,
@@ -145,8 +144,9 @@ Our current programming languages and tools appart us far from the domain concep
 #### A medium for thinking and learning
 
 Following the previous hypothesis, we must get away from pencil-and-paper thinking and 
-create a new dynamic medium for thinking and learning software (you can read our previous post about 
-developing tools for thought). 
+create a new dynamic medium for thinking and learning software. In our previous post *[Designing media for thought with 
+moldable development](https://osoco.es/thoughts/2019/05/designing-media-for-thought-with-moldable-development/)* you
+can read about how we applied a *constructivist* approach to the development of a software library.
 
 Even when working on the computer, we still think in representations that were invented for the medium of paper. Programming languages are written languages and they were designed for writing. Indeed, what programmers think is determined by the language they use, but some languages or media allow you to think "better" than others (weak Sapir–Whorf hypothesis or “linguistic relativity”). 
 
@@ -167,7 +167,7 @@ running and evolving to be able to fully understand its dynamics.
 In summary, our vision argue that we should revisit our traditional programming paradigms to
 address these issues.
 
-### Main Challenges
+### Main challenges
 
 Finally, we could propose some research challenges:
 
@@ -184,17 +184,15 @@ Thanks to Javier Luque, Milton Lopez, Tudor Gîrba, Shalabh Chaturvedi, Marcel W
 
 ### References
 
-- The Death of Object-Oriented Programming. Oscar Nierstrasz. Software Composition Group, University of Bern, Switzerland.
-- Conceptual-Model Programming: A Manifesto. David W. Embley, Stephen W. Liddle, and Oscar Pastor.
+- [The Death of Object-Oriented Programming](https://www.youtube.com/watch?v=ifW0qEJ7OTM). Oscar Nierstrasz. Software Composition Group, University of Bern, Switzerland.
+- [Conceptual-Model Programming: A Manifesto](https://www.deg.byu.edu/papers/Manifesto.pdf). David W. Embley, Stephen W. Liddle, and Oscar Pastor.
 - [The Humane Representation of Thought](http://worrydream.com/TheHumaneRepresentationOfThought/note.html). Bret Victor.
 - [Media for Thinking the Unthinkable](http://worrydream.com/MediaForThinkingTheUnthinkable/). Bret Victor.
-- Patterns of Software: Tales from the Software Community. Richard P. Gabriel.
-- Object Thinking. David West.
-- Domain-Driven Design:Tackling Complexity in the Heart of Software. Eric Evans.
-- Implementing Domain-Driven Design. Vernon Vaughn.
-- Domain-Driven Design Reference: Definitions and Pattern Summaries. Eric Evans.
-- The Nature of Software Development. Ron Jeffries.
-- The CRC Card Book. David Bellin and Susan Suchman.
+- [Patterns of Software: Tales from the Software Community](https://www.goodreads.com/book/show/685486.Patterns_of_Software). Richard P. Gabriel.
+- [Object Thinking](https://www.goodreads.com/book/show/43940.Object_Thinking). David West.
+- [Domain-Driven Design: Tackling Complexity in the Heart of Software](https://www.goodreads.com/book/show/179133.Domain_Driven_Design). Eric Evans.
+- [The Nature of Software Development](https://www.goodreads.com/en/book/show/23016056-the-nature-of-software-development). Ron Jeffries.
+- [The CRC Card Book](https://www.goodreads.com/book/show/3437937-the-crc-card-book). David Bellin and Susan Suchman.
 
 ### Credits
 

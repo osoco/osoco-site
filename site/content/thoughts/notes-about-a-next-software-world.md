@@ -143,7 +143,7 @@ We could identify the some working hypothesis to implement our vision.
 Programming is a representation of thought, so programmers should be able to focus their
 attention on the problem space rather than the solution space. 
    
-Our current programming languages and tools appart us far from the domain concepts. Even using those languages relatively bening &mdash;like "pure" object-oriented programming languages&mdash; it is still required too much attention and dedicated effort to the implementation details.
+Our current programming languages and tools appart us far from the domain concepts. Even using those languages relatively benign &mdash;like "pure" object-oriented programming languages&mdash; it is still required too much attention and dedicated effort to the implementation details.
 
 #### A medium for thinking and learning
 

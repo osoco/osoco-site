@@ -72,7 +72,7 @@ development activity, but not an inherent characteristic to the nature of softwa
 Nowadays, the programming we have invented requires developers to jump continuously between very
 different thinking levels &mdash;like the conceptual, the source code or the runtime levels&mdash; 
 trying to tracing back and forth between a domain concept and the code that represents it, 
-or between a defect and the affected source code or application benaviour.
+or between a defect and the affected source code or application behaviour.
 
 We claim that **programming should be reconsidered as a mainly modelling activity and programmers
 should be able to capture their applications in an executable domain model from which to obtain
@@ -184,7 +184,7 @@ working permanently within a "pure" conceptual modeling environment. This concep
 
 <hr class="section-divider"/>
 
-Thanks to Javier Luque, Milton Lopez, Tudor Gîrba, Shalabh Chaturvedi, Marcel Wiher and Joël Franusic for their corrections and feedback on the draft of this post.
+Thanks to Javier Luque, [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](), Shalabh Chaturvedi, Marcel Wiher and Joël Franusic for their corrections and feedback on the draft of this post.
 
 ### References
 

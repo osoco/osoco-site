@@ -31,7 +31,8 @@ Allen's post explains it very clearly:
 I started my interest in Smalltalk about 2005 when I read about his idiosyncrasies and ubiquitous influence in the 
 *[Naked Objects](https://www.goodreads.com/book/show/2638796-naked-objects)* book. I have been
 learning and practicing Smalltalk since those days &mdash;using *[Squeak](https://squeak.org/)* 
-and *[Pharo](https://pharo.org/)*&mdash; and finally adopting Pharo Smalltalk into the OSOCO's stack. 
+and *[Pharo](https://pharo.org/)*&mdash; and finally adopting Pharo Smalltalk into the OSOCO's stack (you can read about it 
+[in](http://localhost:3000/thoughts/2017/11/pharo-en-osoco-parte-1/) [these](http://localhost:3000/thoughts/2017/12/pharo-en-osoco-parte-2/) [previous](http://localhost:3000/thoughts/2019/05/understanding-bloom-filters-with-pharo-smalltalk/) [posts](http://localhost:3000/thoughts/2019/05/designing-media-for-thought-with-moldable-development/)).
 
 However, as Allen describes, Smalltalk is not only a great environment for general-purpose programming that we can use
 as software consultants, but an exceptional research tool to *invent the future* of software.
@@ -39,11 +40,11 @@ as software consultants, but an exceptional research tool to *invent the future*
 I think the exposition to Smalltalk and his 
 [design principles](https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html) made me inevitably 
 think that *[The Computer Revolution Hasn't Happened Yet](http://www.vpri.org/pdf/m2007007a_revolution.pdf)* 
-and an alternative software world is desirable and possible. I've been wandering around this idea since a long
-time ago until last year we started **[Blue Plane](https://blueplane.xyz)**, a very small research initiative
-supported by OSOCO, for long-term thinking and projects about the future of software.
+and, therefore, an alternative software world is desirable and possible. I've been wandering around this idea since a long
+time ago, until last year we started **[Blue Plane](https://blueplane.xyz)** &mdash;a very small research initiative
+supported by OSOCO&mdash; for long-term thinking and development of projects about the future of software.
 
-We are still defining our particular vision of a new software world in Blue Plane: What is our goal? What principles will drive our designs? How we imagine the future of software? However, I found some rough notes I wrote in 2016 about these
+We are still defining our particular vision of "a" new software world in Blue Plane: What is our goal? What principles will drive our designs? How we imagine the future of software? However, I found some rough notes I wrote in 2016 about these
 ideas. We have read and think a lot about it since 2016, but these notes describe our starting point, and 
 I think they are still fundamentally relevant, so I have decided to publish them now.
 
@@ -51,13 +52,14 @@ I think they are still fundamentally relevant, so I have decided to publish them
 
 ### Introduction
 
-Software industry statistics as a whole have failed to improve much since NATO Software Conference at 1968, 
-when **software engineering** and **scientific management** were introduced as means for resolving 
+Software industry statistics as a whole have failed to improve much since the first 
+[NATO Software Engineering Conference](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF) held in 1968, 
+where **software engineering** and **scientific management** were introduced as means for resolving 
 the *software crisis*. Unfortunately abandoned projects, cost and time overruns, 
 and bloated, buggy software still dominate the landscape.
 
 In spite of the efforts to mitigate this situation &mdash;like XP, Agile, software craftsmanship or DDD&mdash; 
-the reality is that a usual software project stack involves an increasingly larger number of programming
+the reality is that a usual software project stack involves an increasingly large number of programming
 languages, DSLs, frameworks, systems, tools, techniques and processes, so it is a fact that the
 **accidental complexity** in our day-to-day software projects is increasing to unbearable levels.
 
@@ -74,21 +76,22 @@ different thinking levels &mdash;like the conceptual, the source code or the run
 trying to tracing back and forth between a domain concept and the code that represents it, 
 or between a defect and the affected source code or application behaviour.
 
-We claim that **programming should be reconsidered as a mainly modelling activity and programmers
+We claim that **programming should be reconsidered as a mainly modelling and simulation activity and programmers
 should be able to capture their applications in an executable domain model from which to obtain
 running prototypes efforlessly and immediately**.
 
 In the other hand, we have constrained the developers range of experiences in a tiny subset of their
 intellectual capabilities: sitting at a desk, staring at a computer screen and typing in a keyboard
 like modern typists. We think this is the wrong way to understand or think about a complex system. 
-The right way is to model it and explore it. So **we need a new kind of medium to create 
-"dynamic models" in real time in the middle of a modelling conversation with other developers or 
+The right way is to model and explore it. So **we need a new kind of medium to create 
+"dynamic models" in real time in the middle of a modelling conversation with other developers, designers and 
 domain experts**.
 
 We invision **a new breed of dynamic and fully conceptual modeling environment** in order to enable
 programmers to work through every development stage: analysis, specification, design,
 implementation, deployment, evolution, etc. at the conceptual level, and explore their dynamic
-models as a thinking and learning tool.
+models. This environment will be **a kind of thinking and learning tool, more than
+a classical programming environment**.
 
 ### State of the art
 
@@ -184,7 +187,7 @@ working permanently within a "pure" conceptual modeling environment. This concep
 
 <hr class="section-divider"/>
 
-Thanks to Javier Luque, [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](), Shalabh Chaturvedi, Marcel Wiher and Joël Franusic for their corrections and feedback on the draft of this post.
+Thanks to [Javier Luque](https://twitter.com/javierluque), [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](https://twitter.com/girba), [Shalabh Chaturvedi](https://twitter.com/chatur_shalabh), [Marcel Weiher](https://twitter.com/mpweiher) and [Joël Franusic](https://twitter.com/mpweiher) for their corrections and feedback on the draft of this post.
 
 ### References
 
@@ -200,7 +203,7 @@ Thanks to Javier Luque, [Milton López](https://twitter.com/miltonlopez_), [Tudo
 
 ### Credits
 
-- **Header photo**: *Wanderer above the Sea of Fog* oil on canvas by <a href="https://en.wikipedia.org/wiki/Caspar_David_Friedrich" target="_blank">Caspar David Friedrich</a> circa 1818.
+- **Header photo**: *Wanderer above the Sea of Fog*, oil on canvas by <a href="https://en.wikipedia.org/wiki/Caspar_David_Friedrich" target="_blank">Caspar David Friedrich</a> circa 1818.
 
 
 

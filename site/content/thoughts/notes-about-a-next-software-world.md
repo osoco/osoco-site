@@ -188,7 +188,7 @@ working permanently within a "pure" conceptual modelling environment. This conce
 
 <hr class="section-divider"/>
 
-Thanks to [Megan Edwards]() for her proofreading and to [Javier Luque](https://twitter.com/javierluque), [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](https://twitter.com/girba), [Shalabh Chaturvedi](https://twitter.com/chatur_shalabh), [Marcel Weiher](https://twitter.com/mpweiher) and [Joël Franusic](https://twitter.com/mpweiher) for their corrections and feedback on the draft of this post.
+Thanks to [Meg Edwards](https://twitter.com/Miss_MME23) for her thorough proofreading of this post and to [Javier Luque](https://twitter.com/javierluque), [José San Leandro](https://twitter.com/JoseSanLeandro), [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](https://twitter.com/girba), [Shalabh Chaturvedi](https://twitter.com/chatur_shalabh), [Marcel Weiher](https://twitter.com/mpweiher) and [Joël Franusic](https://twitter.com/mpweiher) for their corrections and feedback on the draft.
 
 ### References
 

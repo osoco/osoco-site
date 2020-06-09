@@ -1,5 +1,5 @@
 +++
-title = "Notes about a next software world"
+title = "Notes about a new software world"
 subtitle = "An eXtreme DDD approach"
 date = "2020-06-05"
 months = [ "2020-06" ]
@@ -13,39 +13,42 @@ backgroundSummary = "wanderer-over-sea-of-fog.jpg"
 +++
 
 In his recently published article *[Bits of History, Words of Advice](https://gbracha.blogspot.com/2020/05/bits-of-history-words-of-advice.html)*, Gilad Bracha tries to answer the question **"Why didn't Smalltalk take over the world?"**. In turn, 
-Allen Wirfs-Brock has posted a nice response in his essay *[The Rise and Fall of Comercial Smalltalk](http//www.wirfs-brock.com/allen/posts/914)* complementing Gilad's reflections. 
+Allen Wirfs-Brock has posted a nice response in his essay *[The Rise and Fall of Commercial Smalltalk](http//www.wirfs-brock.com/allen/posts/914)* complementing Gilad's reflections. 
 
 {{< tweet 1267949466767618048 >}}
 
 Allen describes the historical context of the *commercial Smalltalk* era (the *[Early History of Smalltalk](http://worrydream.com/EarlyHistoryOfSmalltalk/)* by Alan Kay just finishes when 
-Smalltalk-80 is released to the *wild* world) and several reasons why Smalltalk didn't win. 
+Smalltalk-80 is released *into the wild*) and several reasons why Smalltalk didn't succeed.
 
-Leaving the pragmatical reasons aside, I think the deeper explanation is
-that Smalltalk was invented as a research platform to provide the software foundations for Alan Kay's vision about 
+Leaving pragmatic reasons aside, I think the deeper explanation is
+that Smalltalk was invented as a research platform to provide the software foundations for Alan Kay's vision for 
 personal computing &mdash;the [Dynabook](http://www.vpri.org/pdf/hc_pers_comp_for_children.pdf).
 
 Allen's post explains it very clearly:
 
 > Smalltalk wasn’t created to rule the software world, it was created to enable the invention of a new software world.
 
-I started my interest in Smalltalk about 2005 when I read about his idiosyncrasies and ubiquitous influence in the 
+My interest in Smalltalk began in about 2005 when I read about its idiosyncrasies and ubiquitous influence in the 
 *[Naked Objects](https://www.goodreads.com/book/show/2638796-naked-objects)* book. I have been
-learning and practicing Smalltalk since those days &mdash;using *[Squeak](https://squeak.org/)* 
-and *[Pharo](https://pharo.org/)*&mdash; and finally adopting Pharo Smalltalk into the OSOCO's stack (you can read about it 
-[in](http://localhost:3000/thoughts/2017/11/pharo-en-osoco-parte-1/) [these](http://localhost:3000/thoughts/2017/12/pharo-en-osoco-parte-2/) [previous](http://localhost:3000/thoughts/2019/05/understanding-bloom-filters-with-pharo-smalltalk/) [posts](http://localhost:3000/thoughts/2019/05/designing-media-for-thought-with-moldable-development/)).
+learning and practicing Smalltalk since then &mdash;using *[Squeak](https://squeak.org/)* 
+and *[Pharo](https://pharo.org/)*&mdash; and finally adopting Pharo Smalltalk into OSOCO's stack
+(you can read about it [in](http://localhost:3000/thoughts/2017/11/pharo-en-osoco-parte-1/) 
+[these](http://localhost:3000/thoughts/2017/12/pharo-en-osoco-parte-2/) 
+[previous](http://localhost:3000/thoughts/2019/05/understanding-bloom-filters-with-pharo-smalltalk/) 
+[posts](http://localhost:3000/thoughts/2019/05/designing-media-for-thought-with-moldable-development/)).
 
-However, as Allen describes, Smalltalk is not only a great environment for general-purpose programming that we can use
+However, as Allen describes, Smalltalk is not only a great environment for general-purpose programming to what we can use
 as software consultants, but an exceptional research tool to *invent the future* of software.
 
-I think the exposition to Smalltalk and his 
+I think the exposure to Smalltalk and its 
 [design principles](https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html) made me inevitably 
 think that *[The Computer Revolution Hasn't Happened Yet](http://www.vpri.org/pdf/m2007007a_revolution.pdf)* 
-and, therefore, an alternative software world is desirable and possible. I've been wandering around this idea since a long
-time ago, until last year we started **[Blue Plane](https://blueplane.xyz)** &mdash;a very small research initiative
-supported by OSOCO&mdash; for long-term thinking and development of projects about the future of software.
+and an alternative software world is desirable and possible. I'd been wondering about this idea for a long
+time until last year we started **[Blue Plane](https://blueplane.xyz)**; a very small research initiative
+supported by OSOCO, for long-term thinking and projects about the future of software.
 
-We are still defining our particular vision of "a" new software world in Blue Plane: What is our goal? What principles will drive our designs? How we imagine the future of software? However, I found some rough notes I wrote in 2016 about these
-ideas. We have read and think a lot about it since 2016, but these notes describe our starting point, and 
+We are still defining our particular vision of a new software world in Blue Plane: What is our goal? What principles will drive our designs? How do we imagine the future of software? However, I found some rough notes I wrote in 2016 about these
+ideas. We have read and thought a lot about it since 2016, but these notes describe our starting point, and 
 I think they are still fundamentally relevant, so I have decided to publish them now.
 
 <hr class="section-divider"/>
@@ -54,99 +57,97 @@ I think they are still fundamentally relevant, so I have decided to publish them
 
 Software industry statistics as a whole have failed to improve much since the first 
 [NATO Software Engineering Conference](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF) held in 1968, 
-where **software engineering** and **scientific management** were introduced as means for resolving 
-the *software crisis*. Unfortunately abandoned projects, cost and time overruns, 
+when **software engineering** and **scientific management** were introduced as means for resolving 
+the *software crisis*. Unfortunately, abandoned projects, cost and time overruns, 
 and bloated, buggy software still dominate the landscape.
 
-In spite of the efforts to mitigate this situation &mdash;like XP, Agile, software craftsmanship or DDD&mdash; 
-the reality is that a usual software project stack involves an increasingly large number of programming
+In spite of efforts to mitigate this situation &mdash;like XP, Agile, software craftsmanship or DDD&mdash; 
+the reality is that a typical software project stack involves an increasingly larger number of programming
 languages, DSLs, frameworks, systems, tools, techniques and processes, so it is a fact that the
-**accidental complexity** in our day-to-day software projects is increasing to unbearable levels.
+**accidental complexity** of our day-to-day software projects is increasing to unbearable levels.
 
-As we have conceived the software development, we see as natural that once a programmer has
-adquired enough knowledge about a problem domain and has conceived a mental model for this
-domain we must wait for days or weeks before seeing a running prototype, and maybe months before a
-production-quality piece of software be ready.
+With our current understanding of software development, we take it as given that once a programmer has
+acquired enough knowledge about a problem's domain and has conceived a mental model for this
+domain we must wait for days or weeks before seeing a running prototype, and maybe even months before a
+production-quality piece of software is ready.
 
-We argue that **this is an unacceptable consequence of our failed conception about the software
-development activity, but not an inherent characteristic to the nature of software development**.
+We argue that **this is an unacceptable consequence of our failed conception of software
+development activity, but not an inherent characteristic of the nature of software development**.
 
 Nowadays, the programming we have invented requires developers to jump continuously between very
 different thinking levels &mdash;like the conceptual, the source code or the runtime levels&mdash; 
-trying to tracing back and forth between a domain concept and the code that represents it, 
+trying to trace back and forth between a domain concept and the code that represents it, 
 or between a defect and the affected source code or application behaviour.
 
 We claim that **programming should be reconsidered as a mainly modelling and simulation activity and programmers
-should be able to capture their applications in an executable domain model from which to obtain
-running prototypes efforlessly and immediately**.
+should be able to capture their applications in an executable domain model from which they can obtain
+running prototypes effortlessly and immediately**.
 
-In the other hand, we have constrained the developers range of experiences in a tiny subset of their
-intellectual capabilities: sitting at a desk, staring at a computer screen and typing in a keyboard
+On the other hand, we have constrained the developer's range of experiences to a tiny subset of their
+intellectual capabilities: sitting at a desk, staring at a computer screen and typing on a keyboard
 like modern typists. We think this is the wrong way to understand or think about a complex system. 
-The right way is to model and explore it. So **we need a new kind of medium to create 
-"dynamic models" in real time in the middle of a modelling conversation with other developers, designers and 
+The right way is to model it and explore it. So **we need a new kind of medium to create 
+"dynamic models" in real time in the middle of a modelling conversation with other developers or 
 domain experts**.
 
-We invision **a new breed of dynamic and fully conceptual modeling environment** in order to enable
+We envision **a new breed of dynamic and fully conceptual modelling environment** in order to enable
 programmers to work through every development stage: analysis, specification, design,
 implementation, deployment, evolution, etc. at the conceptual level, and explore their dynamic
-models. This environment will be **a kind of thinking and learning tool, more than
-a classical programming environment**.
+models as a thinking and learning tool.
 
 ### State of the art
 
-Software engineers are little concerned with the representation and processing of domain knowledge
-and too much concerned with the solution space considerations.
+Software engineers are too little concerned with the representation and processing of domain knowledge
+and too concerned with the solution space considerations.
 
-Until now, the focus has been on the least tractable representation of the software problem: the code.
+Until now, the focus has been on the least manageable representation of the software problem: the code.
 The code has several disadvantages as a tool for thinking:
   - It's extremely complex.
   - It's hard to reason about, forcing programmers to run the code in their heads.
   - It's hard to change, adapt or reuse.
   
 The promise of object-oriented programming, and of high-level programming languages themselves, has yet to
-be fulfilled. That promise is to make plain to computers and to other programmers the communication
-of the computational intentions of a programmer or a team of programmers.
+be fulfilled. That promise is to clearly communicate to computers and to other programmers the computational intentions of a programmer or a team of programmers.
 
-The failure of programming languages to do this is the result of a variety of failures to take seriously
-the needs of people in programming, rather than the needs of the computer and the language/compiler/framework 
-author. To some degree, this failure can be attributed to our failure to take seriously the needs 
-of the programmer.
+The failure of programming languages to do this is the result of a variety of failures to take
+the needs of people seriously in programming, rather than the needs of the computer and the language/compiler/framework 
+author. To some degree, this failure can be attributed to our failure to take the needs 
+of the programmer seriously.
 
-Several initiatives have appeared in the last years trying to tackle the software complexity by focusing
-our attention on the knowledge of the domain, picking apart the most tricky, intricate problems with
+Several initiatives have appeared in recent years trying to tackle the software complexity by focusing
+our attention on domain knowledge, picking apart the most tricky, intricate problems with
 models, and shaping the software around those models.
 
 Perhaps the most prominent initiative in this direction is the **Domain-Driven Design** (DDD) approach
-proposed by Eric Evans in 2003. Since then the DDD principles have been slowly spreaded and
-adopted by an incipient community of practitioners. In spite of these efforts, most software projects
-continue both ignoring the relevance of the domain knowledge and doing a poor previous modelling work
-withouth getting much real benefits at the end.
+proposed by Eric Evans in 2003. Since then the DDD principles have been slowly spread and
+adopted by an growing community of practitioners. In spite of these efforts, most software projects
+continue to both ignore the relevance of the domain knowledge and carry out poor previous modelling work
+without getting many real benefits in the end.
 
-In our opinion, DDD has laid out some useful ideas and practices. However, we could try to take the
-DDD phylosophy and values until their last consequences in a kind of **eXtreme DDD** mindset.
+In our opinion, DDD has laid out some useful ideas and practices. However, we could try to apply the
+DDD philosophy and values no matter the consequences, in a kind of **eXtreme DDD** mindset.
 
-### Some hypothesis of work
+### Some hypotheses of work
 
 It is safe to say that we all share a feeling of unease as far as the general state of software is
 concerned: development is difficult, achieving correctness is difficult, levels of software reuse are low,
 feedback loops are too long, etc.
 
-In our vision we have pointed some of the possible causes of this apparent failure, and argued 
+In our vision we have pointed out some of the possible causes of this apparent failure, and argued 
 that we need to be bolder in interpreting the original vision of the object thinking philosophy.
 
 An argument can be made that the contemporary mainstream understanding of objects is but a pale shadow 
-of the original idea. Further, it can be argued that the mainstream understanding of objects is, in practice, 
+of the original idea. Furthermore, it can be argued that the mainstream understanding of objects is, in practice, 
 antithetical to the original intent (reference *Object Thinking* by David West here).
 
-We could identify the some working hypothesis to implement our vision.
+We could identify some working hypotheses to implement our vision.
 
 #### Programming as a representation of knowledge
 
 Programming is a representation of thought, so programmers should be able to focus their
 attention on the problem space rather than the solution space. 
    
-Our current programming languages and tools appart us far from the domain concepts. Even using those languages relatively benign &mdash;like "pure" object-oriented programming languages&mdash; it is still required too much attention and dedicated effort to the implementation details.
+Our current programming languages and tools distance us from the domain concepts. Even using relatively benign languages &mdash;like "pure" object-oriented programming languages&mdash; too much attention and dedicated effort to the implementation details are still required.
 
 #### A medium for thinking and learning
 
@@ -157,7 +158,7 @@ can read about how we applied a *constructivist* approach to the development of 
 
 Even when working on the computer, we still think in representations that were invented for the medium of paper. Programming languages are written languages and they were designed for writing. Indeed, what programmers think is determined by the language they use, but some languages or media allow you to think "better" than others (weak Sapir–Whorf hypothesis or “linguistic relativity”). 
 
-To understand and build complex systems, we need powerful new representations, and we need a new medium to work with these representations. Our screens and keyboards are pencil and paper metaphors that constrain us to mostly simple symbolic representations. 
+To understand and build complex systems, we need powerful new representations, and we need a new medium to work with these representations. Our screens and keyboards are pencil and paper metaphors that constrain us to mostly simple symbolic representations.
 
 The next new medium representations should draw on all
 the modes of understanding of the human brain like visual, aural, tactile, kinesthetic and
@@ -166,20 +167,20 @@ spatial.
 #### A dynamic medium
 
 The new media should also be dynamic because to understand a system it's not
-enough to see one static representation or its state at a time. You should see the system
+enough to see one static representation or its state at a single moment. You should see the system
 running and evolving to be able to fully understand its dynamics.
 
 <hr class="section-divider"/>
 
-In summary, our vision argue that we should revisit our traditional programming paradigms to
+In summary, our vision argues that we should revisit our traditional programming paradigms to
 address these issues.
 
 ### Main challenges
 
-Finally, we could propose some research challenges:
+Finally, we propose some research challenges:
 
-1. Bring programmers inmerse into the domain model and avoid any kind of distractions by
-working permanently within a "pure" conceptual modeling environment. This conceptual environment must provide a whole view of a software system, including all necessary aspects of its function (behaviour), interaction (system integrations and user interactions) and data (structure).
+1. Help programmers immerse themselves in the domain model and avoid any kind of distractions by
+working permanently within a "pure" conceptual modelling environment. This conceptual environment must provide a whole view of a software system, including all necessary aspects of its function (behaviour), interaction (system integrations and user interactions) and data (structure).
 
 2. Build a domain-aware runtime environment &mdash;for instance, a kind of domain-aware virtual machine&mdash; able to interpret any valid conceptual model. This runtime environment should enable very fast feedback loops based on our incomplete and still work-in-progress models.
 
@@ -187,7 +188,7 @@ working permanently within a "pure" conceptual modeling environment. This concep
 
 <hr class="section-divider"/>
 
-Thanks to [Javier Luque](https://twitter.com/javierluque), [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](https://twitter.com/girba), [Shalabh Chaturvedi](https://twitter.com/chatur_shalabh), [Marcel Weiher](https://twitter.com/mpweiher) and [Joël Franusic](https://twitter.com/mpweiher) for their corrections and feedback on the draft of this post.
+Thanks to [Megan Edwards]() for her proofreading and to [Javier Luque](https://twitter.com/javierluque), [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](https://twitter.com/girba), [Shalabh Chaturvedi](https://twitter.com/chatur_shalabh), [Marcel Weiher](https://twitter.com/mpweiher) and [Joël Franusic](https://twitter.com/mpweiher) for their corrections and feedback on the draft of this post.
 
 ### References
 
@@ -204,7 +205,3 @@ Thanks to [Javier Luque](https://twitter.com/javierluque), [Milton López](https
 ### Credits
 
 - **Header photo**: *Wanderer above the Sea of Fog*, oil on canvas by <a href="https://en.wikipedia.org/wiki/Caspar_David_Friedrich" target="_blank">Caspar David Friedrich</a> circa 1818.
-
-
-
-

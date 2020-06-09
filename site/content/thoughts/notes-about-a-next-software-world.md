@@ -32,10 +32,10 @@ My interest in Smalltalk began in about 2005 when I read about its idiosyncrasie
 *[Naked Objects](https://www.goodreads.com/book/show/2638796-naked-objects)* book. I have been
 learning and practicing Smalltalk since then &mdash;using *[Squeak](https://squeak.org/)* 
 and *[Pharo](https://pharo.org/)*&mdash; and finally adopting Pharo Smalltalk into OSOCO's stack
-(you can read about it [in](http://localhost:3000/thoughts/2017/11/pharo-en-osoco-parte-1/) 
-[these](http://localhost:3000/thoughts/2017/12/pharo-en-osoco-parte-2/) 
-[previous](http://localhost:3000/thoughts/2019/05/understanding-bloom-filters-with-pharo-smalltalk/) 
-[posts](http://localhost:3000/thoughts/2019/05/designing-media-for-thought-with-moldable-development/)).
+(you can read about it [in](/thoughts/2017/11/pharo-en-osoco-parte-1/) 
+[these](/thoughts/2017/12/pharo-en-osoco-parte-2/) 
+[previous](/thoughts/2019/05/understanding-bloom-filters-with-pharo-smalltalk/) 
+[posts](/thoughts/2019/05/designing-media-for-thought-with-moldable-development/)).
 
 However, as Allen describes, Smalltalk is not only a great environment for general-purpose programming to what we can use
 as software consultants, but an exceptional research tool to *invent the future* of software.

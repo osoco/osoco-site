@@ -32,10 +32,9 @@ My interest in Smalltalk began in about 2005 when I read about its idiosyncrasie
 *[Naked Objects](https://www.goodreads.com/book/show/2638796-naked-objects)* book. I have been
 learning and practicing Smalltalk since then &mdash;using *[Squeak](https://squeak.org/)* 
 and *[Pharo](https://pharo.org/)*&mdash; and finally adopting Pharo Smalltalk into OSOCO's stack
-(you can read about it [in](/thoughts/2017/11/pharo-en-osoco-parte-1/) 
-[these](/thoughts/2017/12/pharo-en-osoco-parte-2/) 
-[previous](/thoughts/2019/05/understanding-bloom-filters-with-pharo-smalltalk/) 
-[posts](/thoughts/2019/05/designing-media-for-thought-with-moldable-development/)).
+(you can read about it [in]({{< ref "pharo-en-osoco-parte-1.md" >}}) 
+[these]({{< ref "pharo-en-osoco-parte-2.md" >}}) [previous]({{< ref "understanding-bloom-filters-with-pharo.md" >}}) 
+[posts]({{< ref "designing-media-for-thought-with-moldable-development.md" >}})).
 
 However, as Allen describes, Smalltalk is not only a great environment for general-purpose programming to what we can use
 as software consultants, but an exceptional research tool to *invent the future* of software.
@@ -127,7 +126,7 @@ without getting many real benefits in the end.
 In our opinion, DDD has laid out some useful ideas and practices. However, we could try to apply the
 DDD philosophy and values no matter the consequences, in a kind of **eXtreme DDD** mindset.
 
-### Some hypotheses of work
+### Some hypothesis of work
 
 It is safe to say that we all share a feeling of unease as far as the general state of software is
 concerned: development is difficult, achieving correctness is difficult, levels of software reuse are low,
@@ -136,9 +135,11 @@ feedback loops are too long, etc.
 In our vision we have pointed out some of the possible causes of this apparent failure, and argued 
 that we need to be bolder in interpreting the original vision of the object thinking philosophy.
 
-An argument can be made that the contemporary mainstream understanding of objects is but a pale shadow 
+As David West describes in his great *Object Thinking* book:
+
+>An argument can be made that the contemporary mainstream understanding of objects is but a pale shadow 
 of the original idea. Furthermore, it can be argued that the mainstream understanding of objects is, in practice, 
-antithetical to the original intent (reference *Object Thinking* by David West here).
+antithetical to the original intent.
 
 We could identify some working hypotheses to implement our vision.
 
@@ -147,16 +148,16 @@ We could identify some working hypotheses to implement our vision.
 Programming is a representation of thought, so programmers should be able to focus their
 attention on the problem space rather than the solution space. 
    
-Our current programming languages and tools distance us from the domain concepts. Even using relatively benign languages &mdash;like "pure" object-oriented programming languages&mdash; too much attention and dedicated effort to the implementation details are still required.
+Our current programming languages and tools distance us from the domain concepts. Even using relatively benign languages &mdash;like "pure"[^2] object-oriented programming languages&mdash; too much attention and dedicated effort to the implementation details are still required.
 
 #### A medium for thinking and learning
 
 Following the previous hypothesis, we must get away from pencil-and-paper thinking and 
 create a new dynamic medium for thinking and learning software. In our previous post *[Designing media for thought with 
-moldable development](https://osoco.es/thoughts/2019/05/designing-media-for-thought-with-moldable-development/)* you
+moldable development]({{< ref "designing-media-for-thought-with-moldable-development.md" >}})* you
 can read about how we applied a *constructivist* approach to the development of a software library.
 
-Even when working on the computer, we still think in representations that were invented for the medium of paper. Programming languages are written languages and they were designed for writing. Indeed, what programmers think is determined by the language they use, but some languages or media allow you to think "better" than others (weak Sapir–Whorf hypothesis or “linguistic relativity”). 
+Even when working on the computer, we still think in representations that were invented for the medium of paper. Programming languages are written languages and they were designed for writing. Indeed, what programmers think is determined by the language they use, but some languages or media allow you to think "better" than others (the weak Whorf-Sapir hypothesis or *linguistic relativity* [^1]). 
 
 To understand and build complex systems, we need powerful new representations, and we need a new medium to work with these representations. Our screens and keyboards are pencil and paper metaphors that constrain us to mostly simple symbolic representations.
 
@@ -190,6 +191,15 @@ working permanently within a "pure" conceptual modelling environment. This conce
 
 Thanks to [Meg Edwards](https://twitter.com/Miss_MME23) for her thorough proofreading of this post. Also to [Javier Luque](https://twitter.com/javierluque), [José San Leandro](https://twitter.com/JoseSanLeandro), [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](https://twitter.com/girba), [Shalabh Chaturvedi](https://twitter.com/chatur_shalabh), [Marcel Weiher](https://twitter.com/mpweiher) and [Joël Franusic](https://twitter.com/mpweiher) for their corrections and feedback on the draft.
 
+[^1]: Benjamin Lee Whorf and Edward Sapir advanced a theory claiming that the structure of a language affects its speakers' cognition, and thus people's perceptions are relative to their spoken language.
+
+    Currently, the Whorf-Sapir hypothesis is not fully accepted because most linguists and cognitive scientists believe that the hypothesis is flawed by overstatement and that the theory reflects some basic errors in the understanding of the Hopi language. However, most linguists hold that language influences certain kinds of cognitive processes in non-trivial ways.
+
+[^2]: Even the programming languages that came closest to embodying the behavioral object principles, like Smalltalk, don't fits perfectly with the canonical object mindset by Alan Kay. 
+
+    According to Kay, [object-oriented programming means only messaging, local retention and protection and hiding of state-process, and extreme late-binding](http://userpage.fu-berlin.de/~ram/pub/pub_jf47ht81Ht/doc_kay_oop_en). In Smalltalk, classes
+    and objects are central, however the message passing is not a first-class citizen. Perhaps [Erlang might be much closer to the Kay's original definition](https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented).
+    
 ### References
 
 - [The Death of Object-Oriented Programming](https://www.youtube.com/watch?v=ifW0qEJ7OTM). Oscar Nierstrasz. Software Composition Group, University of Bern, Switzerland.

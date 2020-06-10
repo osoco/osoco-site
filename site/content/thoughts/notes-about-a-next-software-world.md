@@ -57,8 +57,8 @@ I think they are still fundamentally relevant, so I have decided to publish them
 Software industry statistics as a whole have failed to improve much since the first 
 [NATO Software Engineering Conference](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF) held in 1968, 
 when **software engineering** and **scientific management** were introduced as means for resolving 
-the *software crisis*. Unfortunately, abandoned projects, cost and time overruns, 
-and bloated, buggy software still dominate the landscape.
+the *software crisis*. Unfortunately, failed projects, cost and time overruns, 
+and *[big ball of mud](http://www.laputan.org/mud/mud.html#BigBallOfMud)* software systems still are common today.
 
 In spite of efforts to mitigate this situation &mdash;like XP, Agile, software craftsmanship or DDD&mdash; 
 the reality is that a typical software project stack involves an increasingly larger number of programming

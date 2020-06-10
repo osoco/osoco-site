@@ -126,7 +126,7 @@ without getting many real benefits in the end.
 In our opinion, DDD has laid out some useful ideas and practices. However, we could try to apply the
 DDD philosophy and values no matter the consequences, in a kind of **eXtreme DDD** mindset.
 
-### Some hypothesis of work
+### Some hypotheses of work
 
 It is safe to say that we all share a feeling of unease as far as the general state of software is
 concerned: development is difficult, achieving correctness is difficult, levels of software reuse are low,
@@ -179,7 +179,7 @@ address these issues.
 ### Main challenges
 
 Finally, we propose some research challenges:
-
+p
 1. Help programmers immerse themselves in the domain model and avoid any kind of distractions by
 working permanently within a "pure" conceptual modelling environment. This conceptual environment must provide a whole view of a software system, including all necessary aspects of its function (behaviour), interaction (system integrations and user interactions) and data (structure).
 

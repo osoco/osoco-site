@@ -13,7 +13,7 @@ backgroundSummary = "wanderer-over-sea-of-fog.jpg"
 +++
 
 In his recently published article *[Bits of History, Words of Advice](https://gbracha.blogspot.com/2020/05/bits-of-history-words-of-advice.html)*, Gilad Bracha tries to answer the question **"Why didn't Smalltalk take over the world?"**. In turn, 
-Allen Wirfs-Brock has posted a nice response in his essay *[The Rise and Fall of Commercial Smalltalk](http//www.wirfs-brock.com/allen/posts/914)* complementing Gilad's reflections. 
+Allen Wirfs-Brock has posted a nice response in his essay *[The Rise and Fall of Commercial Smalltalk](http://www.wirfs-brock.com/allen/posts/914)* complementing Gilad's reflections. 
 
 {{< tweet 1267949466767618048 >}}
 

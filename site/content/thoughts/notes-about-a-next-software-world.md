@@ -36,7 +36,7 @@ and *[Pharo](https://pharo.org/)*&mdash; and finally adopting Pharo Smalltalk in
 [these]({{< ref "pharo-en-osoco-parte-2.md" >}}) [previous]({{< ref "understanding-bloom-filters-with-pharo.md" >}}) 
 [posts]({{< ref "designing-media-for-thought-with-moldable-development.md" >}})).
 
-However, as Allen describes, Smalltalk is not only a great environment for general-purpose programming to what we can use
+However, as Allen describes, Smalltalk is not only a great environment for general-purpose programming that we can use
 as software consultants, but an exceptional research tool to *invent the future* of software.
 
 I think the exposure to Smalltalk and its 

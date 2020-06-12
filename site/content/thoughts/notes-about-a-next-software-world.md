@@ -42,8 +42,8 @@ as software consultants, but an exceptional research tool to *invent the future*
 I think the exposure to Smalltalk and its 
 [design principles](https://www.cs.virginia.edu/~evans/cs655/readings/smalltalk.html) made me inevitably 
 think that *[The Computer Revolution Hasn't Happened Yet](http://www.vpri.org/pdf/m2007007a_revolution.pdf)* 
-and an alternative software world is desirable and possible. I'd been wondering about this idea for a long
-time until last year we started **[Blue Plane](https://blueplane.xyz)**; a very small research initiative
+and an alternative software world is desirable and possible. I've been wondering about this idea for a long
+time and finally last year we started **[Blue Plane](https://blueplane.xyz)**; a very small research initiative
 supported by OSOCO, for long-term thinking and projects about the future of software.
 
 We are still defining our particular vision of a new software world in Blue Plane: What is our goal? What principles will drive our designs? How do we imagine the future of software? However, I found some rough notes I wrote in 2016 about these

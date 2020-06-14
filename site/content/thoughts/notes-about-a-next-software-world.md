@@ -189,7 +189,7 @@ working permanently within a "pure" conceptual modelling environment. This conce
 
 <hr class="section-divider"/>
 
-Thanks to [Meg Edwards](https://twitter.com/Miss_MME23) for her thorough proofreading of this post. Also to [Javier Luque](https://twitter.com/javierluque), [José San Leandro](https://twitter.com/JoseSanLeandro), [Sergio Álvarez](https://twitter.com/codecoolture), [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](https://twitter.com/girba), [Shalabh Chaturvedi](https://twitter.com/chatur_shalabh), [Marcel Weiher](https://twitter.com/mpweiher) and [Joël Franusic](https://twitter.com/mpweiher) for their corrections and feedback on the draft.
+Thanks to [Meg Edwards](https://twitter.com/Miss_MME23) for her thorough proofreading of this post. Also to [Javier Luque](https://twitter.com/javierluque), [José San Leandro](https://twitter.com/JoseSanLeandro), [Geli Crick](https://twitter.com/g_crick), [Sergio Álvarez](https://twitter.com/codecoolture), [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](https://twitter.com/girba), [Shalabh Chaturvedi](https://twitter.com/chatur_shalabh), [Marcel Weiher](https://twitter.com/mpweiher) and [Joël Franusic](https://twitter.com/mpweiher) for their corrections and feedback on the draft.
 
 [^1]: Benjamin Lee Whorf and Edward Sapir advanced a theory claiming that the structure of a language affects its speakers' cognition, and thus people's perceptions are relative to their spoken language.
 

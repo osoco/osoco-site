@@ -58,7 +58,7 @@ Software industry statistics as a whole have failed to improve much since the fi
 [NATO Software Engineering Conference](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF) held in 1968, 
 when **software engineering** and **scientific management** were introduced as means for resolving 
 the *software crisis*. Unfortunately, failed projects, cost and time overruns, 
-and *[big ball of mud](http://www.laputan.org/mud/mud.html#BigBallOfMud)* software systems still are common today.
+and *[big ball of mud](http://www.laputan.org/mud/mud.html#BigBallOfMud)* software systems still are common today [^1].
 
 In spite of efforts to mitigate this situation &mdash;like XP, Agile, software craftsmanship or DDD&mdash; 
 the reality is that a typical software project stack involves an increasingly larger number of programming
@@ -157,7 +157,7 @@ create a new dynamic medium for thinking and learning software. In our previous 
 moldable development]({{< ref "designing-media-for-thought-with-moldable-development.md" >}})* you
 can read about how we applied a *constructivist* approach to the development of a software library.
 
-Even when working on the computer, we still think in representations that were invented for the medium of paper. Programming languages are written languages and they were designed for writing. Indeed, what programmers think is determined by the language they use, but some languages or media allow you to think "better" than others (the weak Whorf-Sapir hypothesis or *linguistic relativity* [^1]). 
+Even when working on the computer, we still think in representations that were invented for the medium of paper. Programming languages are written languages and they were designed for writing. Indeed, what programmers think is determined by the language they use, but some languages or media allow you to think "better" than others (the weak Whorf-Sapir hypothesis or *linguistic relativity* [^3]). 
 
 To understand and build complex systems, we need powerful new representations, and we need a new medium to work with these representations. Our screens and keyboards are pencil and paper metaphors that constrain us to mostly simple symbolic representations.
 
@@ -191,15 +191,21 @@ working permanently within a "pure" conceptual modelling environment. This conce
 
 Thanks to [Meg Edwards](https://twitter.com/Miss_MME23) for her thorough proofreading of this post. Also to [Javier Luque](https://twitter.com/javierluque), [José San Leandro](https://twitter.com/JoseSanLeandro), [Geli Crick](https://twitter.com/g_crick), [Sergio Álvarez](https://twitter.com/codecoolture), [Milton López](https://twitter.com/miltonlopez_), [Tudor Gîrba](https://twitter.com/girba), [Shalabh Chaturvedi](https://twitter.com/chatur_shalabh), [Marcel Weiher](https://twitter.com/mpweiher) and [Joël Franusic](https://twitter.com/mpweiher) for their corrections and feedback on the draft.
 
-[^1]: Benjamin Lee Whorf and Edward Sapir advanced a theory claiming that the structure of a language affects its speakers' cognition, and thus people's perceptions are relative to their spoken language.
+[^1]: Several researchers have published evidence on software project failure. For instance, the [CHAOS report (1994)](https://www.standishgroup.com/sample_research_files/chaos_report_1994.pdf) by Standish Group indicated a high cancellation rate for software projects (31.1%), i.e. projects that were cancelled before they ever got completed. 
 
-    Currently, the Whorf-Sapir hypothesis is not fully accepted because most linguists and cognitive scientists believe that the hypothesis is flawed by overstatement and that the theory reflects some basic errors in the understanding of the Hopi language. However, most linguists hold that language influences certain kinds of cognitive processes in non-trivial ways.
+    A number of researchers have questioned this report, however the published evidence still estimate around 20% rate only on software project cancellation.
+
+    If we consider overall failures (cancelled projects plus delivered projects with unsuccessful performance), the most up-to-date numbers indicate that 26% to 34% of IT projects fail (from [A Replicated Survey of IT Software Project Failures](https://www.computer.org/csdl/magazine/so/2008/05/mso2008050084/13rRUygT7qI) by Khaled El Mam and A. Günes Koru).
 
 [^2]: Even the programming languages that came closest to embodying the behavioral object principles, like Smalltalk, don't fits perfectly with the canonical object mindset by Alan Kay. 
 
     According to Kay, [object-oriented programming means only messaging, local retention and protection and hiding of state-process, and extreme late-binding](http://userpage.fu-berlin.de/~ram/pub/pub_jf47ht81Ht/doc_kay_oop_en). In Smalltalk, classes
     and objects are central, however the message passing is not a first-class citizen. Perhaps [Erlang might be much closer to the Kay's original definition](https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented).
-    
+
+[^3]: Benjamin Lee Whorf and Edward Sapir advanced a theory claiming that the structure of a language affects its speakers' cognition, and thus people's perceptions are relative to their spoken language.
+
+    Currently, the Whorf-Sapir hypothesis is not fully accepted because most linguists and cognitive scientists believe that the hypothesis is flawed by overstatement and that the theory reflects some basic errors in the understanding of the Hopi language. However, most linguists hold that language influences certain kinds of cognitive processes in non-trivial ways.
+
 ### References
 
 - [The Death of Object-Oriented Programming](https://www.youtube.com/watch?v=ifW0qEJ7OTM). Oscar Nierstrasz. Software Composition Group, University of Bern, Switzerland.

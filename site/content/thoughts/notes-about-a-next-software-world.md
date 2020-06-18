@@ -119,7 +119,7 @@ models, and shaping the software around those models.
 
 Perhaps the most prominent initiative in this direction is the **Domain-Driven Design** (DDD) approach
 proposed by Eric Evans in 2003. Since then the DDD principles have been slowly spread and
-adopted by an growing community of practitioners. In spite of these efforts, most software projects
+adopted by a growing community of practitioners. In spite of these efforts, most software projects
 continue to both ignore the relevance of the domain knowledge and carry out poor previous modelling work
 without getting many real benefits in the end.
 
@@ -179,7 +179,7 @@ address these issues.
 ### Main challenges
 
 Finally, we propose some research challenges:
-p
+
 1. Help programmers immerse themselves in the domain model and avoid any kind of distractions by
 working permanently within a "pure" conceptual modelling environment. This conceptual environment must provide a whole view of a software system, including all necessary aspects of its function (behaviour), interaction (system integrations and user interactions) and data (structure).
 
@@ -193,14 +193,14 @@ Thanks to [Meg Edwards](https://twitter.com/Miss_MME23) for her thorough proofre
 
 [^1]: Several researchers have published evidence on software project failure. For instance, the [CHAOS report (1994)](https://www.standishgroup.com/sample_research_files/chaos_report_1994.pdf) by Standish Group indicated a high cancellation rate for software projects (31.1%), i.e. projects that were cancelled before they ever got completed. 
 
-    A number of researchers have questioned this report, however the published evidence still estimate around 20% rate only on software project cancellation.
+    A number of researchers have questioned this report, however the published evidence still estimates around a 20% rate on software project cancellation only.
 
     If we consider overall failures (cancelled projects plus delivered projects with unsuccessful performance), the most up-to-date numbers indicate that 26% to 34% of IT projects fail (from [A Replicated Survey of IT Software Project Failures](https://www.computer.org/csdl/magazine/so/2008/05/mso2008050084/13rRUygT7qI) by Khaled El Mam and A. Günes Koru).
 
-[^2]: Even the programming languages that came closest to embodying the behavioral object principles, like Smalltalk, don't fits perfectly with the canonical object mindset by Alan Kay. 
+[^2]: Even the programming languages that came closest to embodying the behavioral object principles, like Smalltalk, don't fit perfectly with the canonical object mindset by Alan Kay. 
 
     According to Kay, [object-oriented programming means only messaging, local retention and protection and hiding of state-process, and extreme late-binding](http://userpage.fu-berlin.de/~ram/pub/pub_jf47ht81Ht/doc_kay_oop_en). In Smalltalk, classes
-    and objects are central, however the message passing is not a first-class citizen. Perhaps [Erlang might be much closer to the Kay's original definition](https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented).
+    and objects are central, however the message passing is not a first-class citizen. Perhaps [Erlang might be much closer to Kay's original definition](https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented).
 
 [^3]: Benjamin Lee Whorf and Edward Sapir advanced a theory claiming that the structure of a language affects its speakers' cognition, and thus people's perceptions are relative to their spoken language.
 

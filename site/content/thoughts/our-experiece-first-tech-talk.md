@@ -1,12 +1,12 @@
 +++
 title = "Our experience giving a tech talk"
 subtitle = ""
-date = "2020-02-25"
+date = ""2020-12-23T15:00:00+01:00""
 months = [ "2020-02" ]
-authors = [ "libertad-pozos, megan-edwards" ]
-// authorPhoto = "libertad-pozos.jpg megan-edwards.jpg"
+authors = [ "libertad-pozos", "megan-edwards" ]
+authorPhoto = "libertad-pozos.jpg"
 draft = "false"
-tags = [ "osoco", "women-in-tech",  "adalaberfest", "software-engineer", "ddd", "event-storming" ]
+tags = [ "osoco", "about", "women-in-tech",  "adalaberfest", "software-engineer", "ddd", "event-storming" ]
 summary = ""
 background = "building-blocks.jpg"
 backgroundSummary = "building-blocks.jpg"

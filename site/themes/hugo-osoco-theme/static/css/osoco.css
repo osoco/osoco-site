@@ -1226,8 +1226,14 @@ a.link:hover {
   padding: .7em 1em .7em 1em;
   display: inline-block;
   font-size: .8em;
-  width: 30%;
+  width: 50%;
   float: left;
+}
+
+.txtBlogAuthor a {
+  display: inline;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* line 1009, ../../../../../sass/web/_general.scss */

@@ -1,12 +1,13 @@
 {{ define "main" }}
 
-{{ $author := index .Params.Authors 0 }}
-{{ $authorFirstname := title (index (split $author "-") 0) }}
-
     <div class="titlePost" style="background-image: url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.Background }})">
 				<div class="autor">
-						<a href="{{ .Site.BaseURL }}authors/{{ $author }}"  title="Todos los posts de {{ $authorFirstname }}"><img src="{{ .Site.BaseURL }}images/personas/{{ .Params.AuthorPhoto | urlize }}" alt="{{ $author | humanize }}"/></a>
-						<a href="{{ .Site.BaseURL }}authors/{{ $author }}" title="Todos los posts de {{ $authorFirstname }}">{{ (index .Params.Authors 0) | humanize }}</a>
+					{{range $key, $author := .Params.Authors}}
+						{{ $authorFirstname := title (index (split $author "-") 0) }}
+						{{ $authorPhoto := (index $.Params.AuthorPhotos $key) }}
+						<a href="{{ $.Site.BaseURL }}authors/{{ $author }}" title="Todos los posts de {{ $authorFirstname }}"><img src="{{ $.Site.BaseURL }}images/personas/{{ $authorPhoto }}" alt="{{ $author | humanize }}"/></a>
+						<a href="{{ $.Site.BaseURL }}authors/{{ $author }}" title="Todos los posts de {{ $authorFirstname }}">{{ $author | humanize }}</a>
+					{{end}}
 				</div>
 				<div class="date">
 						<div class="day">{{ index (split (.Date.Format "2 Jan") " ") 0 }}</div>
@@ -41,7 +42,9 @@
 		</div>
 
 		<div class="panel panel-gray-dark">
-				<a href="{{ $.Site.BaseURL }}authors/{{ $author }}"><h2 class="align-center">Más pensamientos de {{ (index .Params.Authors 0) | humanize }}</h2></a>
+			{{range .Params.Authors}}
+				<a href="{{ $.Site.BaseURL }}authors/{{ . }}"><h2 class="align-center">Más pensamientos de {{ . | humanize }}</h2></a>
+			{{end}}
 		</div>
 
 {{ end }}

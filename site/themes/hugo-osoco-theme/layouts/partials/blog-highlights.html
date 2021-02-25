@@ -11,16 +11,19 @@
   		  {{ if in .tags $key }}
 					{{ range first 3 $taxonomy.Pages }}
 
-					{{ $author := index .Params.Authors 0 }}
 				<div class="post-item" style="background-image:url({{ .Site.BaseURL  }}images/thoughts/{{ .Params.BackgroundSummary }});">
 						<div class="item-content">
 								<div class="date">{{ dateFormat "2 Jan 2006" .Params.Date }}</div>
 								<h3><a href="{{ .Permalink }}">{{ .Params.Title }}</a></h3>
-								<p><a href="{{ .Site.BaseURL }}authors/{{ $author }}">{{ $author | humanize }}</a></p>
 								<p>
-										{{ with .Params.Tags }}
+									{{ with .Params.Authors }}	
+										{{ delimit (apply (sort .) "partial" "author-link" ".") ", " " y " }}
+									{{ end }}									
+								</p>
+								<p>
+									{{ with .Params.Tags }}
 										{{ delimit (apply (sort .) "partial" "post-tag-link" ".") ", " " y " }}
-										{{ end }}
+									{{ end }}
 							 </p>
 						</div>
 				</div>

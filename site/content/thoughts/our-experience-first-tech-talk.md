@@ -8,8 +8,8 @@ authorPhotos = [ "libertad-pozos.jpg", "megan-edwards.jpg" ]
 draft = "false"
 tags = [ "osoco", "about", "women-in-tech",  "adalaberfest", "software-engineer", "ddd", "event-storming" ]
 summary = ""
-background = "building-blocks.jpg"
-backgroundSummary = "building-blocks.jpg"
+background = "cowomen.jpg"
+backgroundSummary = "cowomen.jpg"
 +++
 
 Giving a talk in the tech world as junior software developers is a scary task! We might think that we have nothing to say that hasn't already been said, or that our experience is somehow invalid because we are juniors. However, since we started in this new world, our colleagues have repeatedly told us that **we all have something to tell**, that we need to get over our fear and throw ourselves into participating in a tech event. We did it. We not only shared our knowledge and experiences, we also helped give visibility to women in tech; hopefully encouraging more of us to have the confidence to give a talk, or to spark interest in our field. This was a goal that we'd wanted to achieve since we began as developers; **AdalaberFest** was our opportunity and we took it. 
@@ -40,3 +40,9 @@ At Osoco I have had the opportunity to work on different projects, both back and
 ## Conclusion
 
 Giving a talk in a tech event takes a lot of planning, preparation and hard work. However, we both enjoyed the experience and are proud to contribute to diversity in the tech sector. We are here thanks to all the women who came before us and fought hard to break gender barriers. OSOCO recently created a website celebrating some of these incredible women: [A Hombros de Gigantas](https://ahombrosdegigantas.xyz/). **Our hope is that we will inspire more women to join the world of programming and continue this fight towards equality.** 
+
+
+### Credits
+
+- **Header photo**: Photo by <a href="https://unsplash.com/@cowomen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">CoWomen </a> on  <a href="https://unsplash.com/">Unsplash</a>.
+

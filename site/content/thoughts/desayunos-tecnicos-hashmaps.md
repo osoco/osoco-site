@@ -19,7 +19,7 @@ Aunque ya lo hacíamos anteriormente, durante la *era COVID* ha demostrado ser u
 
 A veces aprovechamos esos desayunos y alguien se anima a introducir algún tema al resto. Se trata de pequeñas charlas de carácter muy informal. Una mezcla de *lightning talk* y conversación de desayuno que llamamos ***breakfast speechs*** o **charlas de desayuno**. 
 
-Los temas no son necesariamente técnicos o ni siquiera aplicables inmediatamente en nuestro trabajo cotidiano. Se trata más bien de un espacio para aprender algo nuevo de nuestros compañeros; en realidad, cualquier cosa interesante que amplie un poco nuestros horizontes. Sin necesidad de formalidades, ni de tener que invertir demasiado tiempo. 
+Los temas no son necesariamente técnicos. A veces ni siquiera son aplicables inmediatamente a nuestro trabajo cotidiano. Se trata más bien de un espacio para aprender algo nuevo de nuestros compañeros; en realidad, cualquier cosa interesante que amplie un poco nuestros horizontes o nos cambie la perspecrtiva. Sin necesidad de formalidades, ni de tener que invertir demasiado tiempo. 
 
 En nuestro tablón podéis ver algunos de los temas anteriores y de los propuestos para el futuro. Como se puede comprobar, los temas van desde la psicología o la física a las matemáticas y la historia del software.
 
@@ -27,9 +27,9 @@ En nuestro tablón podéis ver algunos de los temas anteriores y de los propuest
 
 <hr class="section-divider"/>
 
-Hemos empezado a grabar estos desayunos técnicos y hemos pensado que alguien podría tener interés, con lo que empezaremos a publicar algunos de ellos. 
+Hemos empezado a grabar estos desayunos técnicos y hemos pensado que alguien podría tener interés, con lo que empezaremos a publicar algunos de ellos, aunque os recuerdo que son charlas (a veces conversaciones y debates) muy, muy informales.
 
-De momento comenzamos con dos charlas en las que hablamos sobre **HashMaps**, comenzando con su funcionamiento interno a nivel muy básico, hasta algunas cuestiones más avanzadas como ataques de denegación de servicio, *open addressing* y *closed addressing*, principio de cercanía de referencias (*reference locality*) o jerarquías de memoria.
+De momento comenzamos con dos charlas en las que hablamos sobre **HashMaps**, desde su funcionamiento interno a un nivel muy básico, hasta algunas cuestiones más avanzadas como ataques de denegación de servicio, *open addressing* y *closed addressing*, principio de cercanía de referencias (*reference locality*) o jerarquías de memoria.
 
 ## Parte 1
 {{< vimeo 679979743 >}}

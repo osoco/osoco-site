@@ -19,7 +19,7 @@ Aunque ya lo hacíamos anteriormente, durante la *era COVID* ha demostrado ser u
 
 A veces aprovechamos esos desayunos y alguien se anima a introducir algún tema al resto. Se trata de pequeñas charlas de carácter muy informal. Una mezcla de *lightning talk* y conversación de desayuno que llamamos ***breakfast speechs*** o **charlas de desayuno**. 
 
-Los temas no son necesariamente técnicos. A veces ni siquiera son aplicables inmediatamente a nuestro trabajo cotidiano. Se trata más bien de un espacio para aprender algo nuevo de nuestros compañeros; en realidad, cualquier cosa interesante que amplie un poco nuestros horizontes o nos cambie la perspecrtiva. Sin necesidad de formalidades, ni de tener que invertir demasiado tiempo. 
+Los temas no son necesariamente técnicos. A veces ni siquiera son aplicables inmediatamente a nuestro trabajo cotidiano. Se trata más bien de un espacio para aprender algo nuevo de nuestros compañeros; en realidad, cualquier cosa interesante que amplie un poco nuestros horizontes o nos cambie la perspectiva. Sin necesidad de formalidades, ni de tener que invertir demasiado tiempo. 
 
 En nuestro tablón podéis ver algunos de los temas anteriores y de los propuestos para el futuro. Como se puede comprobar, los temas van desde la psicología o la física a las matemáticas y la historia del software.
 

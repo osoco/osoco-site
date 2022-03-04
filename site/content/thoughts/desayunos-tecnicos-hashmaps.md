@@ -32,7 +32,7 @@ Hemos empezado a grabar estos desayunos técnicos y hemos pensado que alguien po
 De momento comenzamos con dos charlas en las que hablamos sobre **HashMaps**, desde su funcionamiento interno a un nivel muy básico, hasta algunas cuestiones más avanzadas como ataques de denegación de servicio, *open addressing* y *closed addressing*, principio de cercanía de referencias (*reference locality*) o jerarquías de memoria.
 
 ## Parte 1
-{{< vimeo 679979743 >}}
+{{< vimeo 684797556 >}}
 
 ## Parte 2
 {{< vimeo 681323911 >}}

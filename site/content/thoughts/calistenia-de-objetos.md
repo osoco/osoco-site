@@ -1,0 +1,307 @@
++++
+title = "Calistenia de objetos"
+url = "calistenia-de-objetos"
+subtitle = "9 pasos para conseguir hoy un mejor diseño de software, por Jeff Bay"
+date = "2022-03-28T12:00:00Z"
+months = [ "2022-03" ]
+authors = [ "raúl-expósito" ]
+authorPhotos = [ "raúl-expósito.jpg" ]
+draft = "false"
+tags = [ "osoco", "oop", "diseño" ]
+summary = ""
+background = "calistenia.jpg"
+backgroundSummary = "calistenia.jpg"
++++
+
+Todos nos hemos encontrado alguna vez con código pobremente escrito que es difícil de entender, de probar y de mantener. La programación orientada a objetos prometió salvarnos del antiguo código procedimental, permitiéndonos escribir software de forma incremental, reutilizando a medida que avanzamos. Sin embargo, parece que a veces seguimos usando en Java lo mismos diseños complejos y acoplados que teníamos en C.
+
+Es difícil aprender a hacer un buen diseño orientado a objetos. La transición del modelo procedimental al diseño orientado a objetos requiere un cambio en nuestra forma de pensar que es más difícil de lo que parece. Muchos desarrolladores creen que hacen buenos diseños orientados a objetos cuando, en realidad, siguen estancados de forma inconsciente en viejos hábitos que es difícil abandonar. No ayuda que muchos ejemplos y buenas prácticas (incluso el propio código de Sun del JDK) nos lleven a un pobre diseño orientado a objetos en aras del rendimiento o del simple peso de la historia.
+
+Los conceptos principales tras un buen diseño son bien conocidos. Alan Shalloway ha sugerido que los rasgos que importan son siete: cohesión, bajo acoplamiento, falta de redundancia, encapsulación, testeabilidad, legibilidad y enfoque. Es difícil poner esos conceptos en práctica. Una cosa es entender que la encapsulación significa ocultar los datos, la implementación, el tipo, el diseño o la construcción, y otra cosa es diseñar código que implemente bien la encapsulación. Es por ello que se plantean unos ejercicios que te pueden ayudar a interiorizar principios de un buen diseño orientado a objetos y así poder usarlos en la vida real.
+
+# El reto
+
+Haz un proyecto simple usando los estándares de programación más estrictos que hayas usado en tu vida. A continuación encontrarás 9 reglas que te ayudarán a poner tu código en forma según el paradigma de la programación orientada a objetos.
+
+No te dejes llevar por el escepticismo y aplica meticulosamente estas reglas en un proyecto pequeño, de unas 1.000 líneas, para comenzar a ver cómo diseñar software de una manera significativamente diferente. El ejercicio termina cuando hayas escrito las 1.000 líneas de código, después puedes relajarte y volver a tu rutina usando estas nueve reglas como guía.
+
+Es un ejercicio difícil, principalmente porque algunas de estas reglas no se pueden aplicar de forma universal. En el mundo real las clases a veces tienen poco más de 50 líneas. Sin embargo, hay un gran valor en pensar qué ocurriría si movemos las responsabilidades a objetos reales que existan por sí mismos. Desarrollar este tipo de pensamiento es el valor real del ejercicio, así que estira los límites de tu imaginación y comprueba si puedes encontrar una nueva forma de pensar en tu manera de programar.
+
+
+# Las reglas
+
+
+1. Un nivel de indentación por método
+1. No uses ELSE
+1. Envuelve todos los tipos primitivos y los Strings
+1. Mete las colecciones en clases
+1. Un punto por línea
+1. No uses abreviaturas
+1. Crea entidades pequeñas
+1. No crees clases con más de dos atributos
+1. No uses getters, setters, ni propiedades
+
+
+<hr class="section-divider"/>
+
+
+# Regla 1: Un nivel de indentación por método
+
+
+¿Alguna vez te has quedado mirando fíjamente un método enorme sin saber muy bien por dónde empezar? A los métodos muy grandes les falta cohesión. Una guía puede ser limitar la longitud de los métodos a 5 líneas, pero este cambio puede ser demasiado grande si tu código está lleno de monstruos de 500 líneas. En su lugar, trata de asegurar que cada método hace únicamente una cosa - una estructura de control o un conjunto de instrucciones por método. Que tengas estructuras de control anidadas significa que estás trabajando con varios niveles de abstracción diferentes, y esto significa que estás haciendo más de una cosa.
+
+Cuando trabajes con métodos que hacen sólamente una cosa, contenidos a su vez dentro de clases que hacen únicamente una cosa, tu código empezará a cambiar, y es que a medida que cada parcela del código de tu aplicación se vuelve más y más pequeña, tu nivel de reutilización se ve incrementado exponencialmente. Puede ser difícil encontrar formas de reutilizar métodos que hacen 5 cosas en 100 líneas de código. Un método de tres líneas que gestiona el estado de un único objeto en un contexto dado puede ser utilizado en otros contextos diferentes.
+
+Utiliza una técnica llamada _"Extraer Método"_ para ir sacando los distintos comportamientos de método hasta que sólo tengas un nivel de indentación, por ejemplo:
+
+```java
+class Tablero {
+  ...
+  String tablero() {
+    StringBuffer buf = new StringBuffer();
+    for (int i = 0; i < 10; i++) {
+      for (int j = 0; j < 10; j++) 
+        buf.append(datos[i][j])
+      buf.append("\n")
+    }
+    return buf.toString();
+  }
+}
+
+
+
+class Tablero {
+  ...
+  String tablero() {
+    StringBuffer buf = new StringBuffer();
+    crearFilas(buf);
+    return buf.toString();
+  }
+
+  void crearFilas(StringBuffer buf) {
+    for (int i = 0; i < 10; i++) {
+      crearFila(buf, i);
+    }
+  }
+
+  void crearFila(StringBuffer buf, int fila) {
+    for (int i = 0; i < 10; i++)
+      buf.append(datos[fila][i]);
+    buf.append("\n");
+  }
+}
+```
+
+Observa otro de los efectos que ha tenido el _refactor_. Relacionar el nombre de cada método con su implementación se ha vuelto trivial. Encontrar errores en esos pequeños trozos de código es, por lo general, mucho más sencillo.
+
+He aquí el fin de la primera regla. Debemos indicar que cuanto más practiques a aplicarla, mejor lo irás haciendo. Tus primeros intentos de descomponer problemas usando este estilo te parecerán extraños y quizá no percibas ninguna ganancia, pero aplicar tanto ésta como el resto de reglas te permitirán llevar tu nivel de programación a otro nivel.
+
+
+<hr class="section-divider"/>
+
+
+# Regla 2: No uses ELSE
+
+Todos los programadores entienden la estructura if/else. Está incluida en todos los lenguajes de programación y su lógica condicional es fácil de entender por todo el mundo. Prácticamente todos los programadores se han encontrado alguna vez con un condicional anidado que era imposible de trazar o con una estructura con 'case' que ocupaba páginas enteras. Para hacerlo más difícil todavía, es más fácil añadir una bifurcación nueva en una condición que ya existe que cambiar el código para dar con una solución mejor. Los condicionales son una fuente frecuente de duplicidades. Un ejemplo clásico es el de los estados por los que puede pasar una variable:
+
+```java
+  if (estado == TERMINADO) {
+    hacerAlgo();
+  } else {
+    ...
+```
+
+Los lenguajes orientados a objetos nos dan una herramienta poderosa, el **polimorfismo**, con la que poder gestionar escenarios complejos en los que los condicionales están presentes. Los diseños que usan polimorfismo son más fáciles de leer, de mantener y expresan qué es lo que quieren hacer de una forma más clara. Pero no siempre es fácil hacer esta transición, especialmente cuando tenemos un ELSE a mano. Así que tienes prohibido usar ELSE como parte de este ejercicio. Intenta utilizar el _Null Object Pattern_, puede ayudar en algunas situaciones. Hay otras herramientas que también pueden mantener los ELSE a raya. Mira cuántas alternativas puedes encontrar.
+
+
+<hr class="section-divider"/>
+
+
+# Regla 3: Envuelve todos los tipos primitivos y los Strings
+
+En el lenguaje de programación Java, el tipo 'int' es un tipo primitivo, no es un objeto real, así que sigue unas normas distintas a las que siguen los objetos. Funciona con una sintaxis que no es orientada a objetos y, lo que es peor, un 'int' en sí mismo simplemente representa un número escalar y, por tanto, no tiene significado _per se_. Cuando un método recibe un 'int' como parámetro, el nombre del método debe hacer todo el trabajo de explicar qué es lo que hace. Si el mismo método recibe una 'Hora' como parámetro es mucho más fácil entender qué pasa dentro de él. Los objetos pequeños como 'Hora' pueden hacer que los programas sean más mantenibles dado que no es posible mandar un 'Año' a un método que espera recibir un parámetro que sea una 'Hora'. Con una variable de tipo primitivo el compilador no te puede ayudar a escribir programas que sean semánticamente correctos. Con un objeto, incluso con el más pequeño, le estás dando tanto al compilador como al programador información adicional sobre qué es el valor y por qué está siendo usado.
+
+Los objetos pequeños como 'Hora' o 'Dinero', además, nos facilitan tener un lugar obvio donde implementar comportamiento que es intrínseco a ellos y que, de otro modo, acaba desperdigado en otras clases. Esto se vuelve especialmente cierto cuando aplicas la Regla **9** y sólo los objetos pequeños pueden acceder a los valores.
+
+
+<hr class="section-divider"/>
+
+
+# Regla 4: Mete las colecciones en clases
+
+
+La aplicación de esta regla es sencilla: si una clase contiene una colección, ésta debe ser el único atributo que exista. Cada colección debe estar envuelta en una clase propia, de tal modo que todos los comportamientos relacionados con ella tengan un hogar. Puede que algunos filtros pasen a formar parte de esta nueva clase. Es más, tu nueva clase podrá tener comportamientos tales como unir dos colecciones o aplicar una regla a cada uno de los elementos del grupo.
+
+
+<hr class="section-divider"/>
+
+
+# Regla 5: Un punto por línea
+
+
+A veces es difícil saber qué objeto debería ser el responsable de realizar una acción concreta. Empezar a encontrar líneas de código con muchos puntos indica que hay responsabilidades que están en el lugar equivocado. La acción está ocurriendo en un lugar incorrecto si tienes más de un punto en una línea de código cualquiera. Quizá se deba a que tu objeto está tratando con otros dos objetos a la vez y, si éste es el caso, tu objeto no es más que un intermediario que sabe demasiado de demasiada gente. Deberías considerar mover la acción a alguno de los otros objetos.
+
+Que los puntos vayan uno detrás de otro significa que tu objeto está buceando demasiado dentro de otro objeto. Esos puntos consecutivos indican que estás saltándote el principio de encapsulación. Prueba a pedir al objeto que haga algo por tí en vez de estar mirando en su interior. La encapsulación en esencia define unos límites que tus clases no deberían traspasar para alcanzar unos tipos que no deberían conocer.
+
+La Ley de Demeter (_"no hables con extraños"_) es un buen punto de partida, pero piensa en ella de esta forma: puedes jugar con tus juguetes, tanto con los que tú haces como con los que alguien te da. Lo que no debes hacer nunca es jugar con los juguetes de tus juguetes.
+
+```java
+class Tablero {
+  ...
+
+  class Pieza {
+    ...
+    String representacion;
+  }
+  class Ubicacion {
+    ...
+    Pieza pieza;
+  }
+
+  String representarTablero() {
+    StringBuffer buf = new StringBuffer();
+    for (Ubicacion u: esquinas())
+      buf.append(u.pieza.representacion.substring(0, 1));
+    return buf.toString();
+  }
+}
+
+
+class Tablero {
+  ...
+  class Pieza {
+    ...
+    private String representacion;
+
+    String caracter() {
+      return representacion.substring(0, 1);
+    }
+
+    void incluirEn(StringBuffer buf) {
+      buf.append(caracter());
+    }
+  }
+  class Ubicacion {
+    ...
+    private Pieza pieza;
+
+    void incluirEn(StringBuffer buf) {
+      pieza.incluirEn(buf);
+    }
+  }
+
+  String representarTablero() {
+    StringBuffer buf = new StringBuffer();
+    for (Ubicacion u: esquinas())
+      u.incluirEn(buf);
+    return buf.toString();
+  }
+}
+```
+
+Observa que en este ejemplo los detalles de la implementación del algoritmo son más difusos, lo que puede hacer que sea un poco difícil entender todo en su conjunto. Sin embargo, has creado un método con un nombre que indica que la pieza se convierte en un carácter. Este método hace lo que su nombre indica y se puede reutilizar, de tal modo que la probabilidad de que `representacion.substring(0, 1)` se repita por otras partes del programa se reduce drásticamente.
+
+
+<hr class="section-divider"/>
+
+
+# Regla 6: No uses abreviaturas
+
+
+Suele ser tentador abreviar el nombre de clases, métodos y variables. Resiste la tentación, las abreviaturas pueden ser confusas y tienden a ocultar problemas mayores.
+
+Piensa por qué quieres abreviar. ¿Es porque estás escribiendo la misma palabra una y otra vez? Si es el caso, quizá tu método se esté usando demasiado y te estés perdiendo alguna oportunidad de eliminar alguna duplicidad. ¿Es porque el nombre de los métodos se está haciendo muy largo? Esto puede indicar que hay una responsabilidad que está donde no le corresponde o que falta una clase.
+
+Trata de mantener los nombres de tus clases y tus métodos en una o dos palabras y evita usar nombres que sean redundantes con el contexto. Si la clase es `Pedido`, el método no necesita llamarse `enviarPedido()`. Simplemente bautiza al método con el nombre `enviar()`, de tal forma que quien llame a esa clase invoque a `pedido.enviar()`, que es una forma más sencilla y más clara de saber qué está pasando.
+
+
+<hr class="section-divider"/>
+
+
+# Regla 7: Crea entidades pequeñas
+
+
+No crees clases de más de 50 líneas ni paquetes con más de 10 ficheros.
+
+Las clases con más de 50 líneas hacen, por lo general, más de una cosa, lo que las convierte en clases difíciles de entender y difíciles de reutilizar. Las clases con 50 líneas tienen la ventaja adicional de que son visibles por pantalla sin necesidad de hacer scroll, lo que permite que sea más fácil entenderlas de un vistazo.
+
+Lo desafiante a la hora de crear estas clases tan pequeñas es conseguir agrupar comportamientos que tengan sentido que estén juntos. Es por ello que tenemos que hacer uso de los paquetes. A medida que tus clases se vuelvan más pequeñas y tengan menos responsabilidades, y dado que el tamaño del paquete se encuentra limitado, empezarás a ver que los paquetes representan agrupaciones de clases relacionadas que cooperan para alcanzar un objetivo. Los paquetes, al igual que las clases, deben estar cohesionadas y perseguir una meta. Hacer que estos paquetes sean pequeños te forzará a darles su identidad real.
+
+
+<hr class="section-divider"/>
+
+
+# Regla 8: No crees clases con más de dos atributos
+
+
+La mayoría de las clases únicamente deberían ser responsables de gestionar una variable de estado, pero puede haber algunas que necesiten gestionar dos. Incluir un atributo nuevo hace que la cohesión de la clase se reduzca. En general, cuando programes utilizando estas reglas, encontrarás que hay dos tipos de clases: aquellas que mantienen el estado usando una única variable y aquellas que coordinan dos variables separadas. No mezcles ambos tipos de responsabilidad.
+
+El lector perspicaz quizá se haya dado cuenta de que las reglas **3** y **4** pueden considerarse idénticas. Hay casos en los que un único nombre puede utilizarse cuando un atributo está formado por varias instancias del mismo tipo. 
+
+Por ejemplo, la siguiente clase:
+
+```java
+clase Nombre {
+  String primerNombrePila;
+  String segundoNombrePila;
+  String apellido;
+}
+```
+
+Puede ser descompuesta en dos clases como estas:
+
+```java
+class Nombre {
+  NombresPila nombresPila;
+  Apellido apellido;
+}
+
+class Apellido {
+  String familia;
+}
+
+class NombresPila {
+  List<String> nombres;
+}
+```
+
+Fíjate en la forma en la que se ha realizado la descomposición, pensando en separar aquello relacionado con los apellidos (usado, por ejemplo, para lógica que involucre asuntos legales) de aquello relacionado con lo que es el nombre en sí de una persona. Una instancia de `NombresPila` contiene una lista de nombres, permitiendo al nuevo modelo tener un nombre, dos, o varios. Este tipo de descomposición lleva a entender qué tipo de relación mantienen varias instancias. A menudo varias instancias del mismo tipo tienen una vida común que pueden compartir en una colección.
+
+De hecho, en la experiencia de los autores, esta descomposición de atributos en una jerarquía de objetos que colaboran entre sí nos lleva a un modelo de objetos más efectivo. Antes de interiorizar esta regla nos pasamos muchas horas siguiendo flujos de datos en objetos grandes. Era posible trazar el modelo de un objeto a costa de revisar concienzudamente qué comportamientos tenía y observarlos. Por el contrario, la aplicación recursiva de esta regla nos ha llevado a descomponer de una forma muy rápida objetos grandes y complejos en otros mucho más sencillos donde el comportamiento se ha quedado en aquellos lugares donde es natural que esté.
+
+
+<hr class="section-divider"/>
+
+
+# Regla 9: No uses getters, setters, ni propiedades
+
+
+La última frase de la regla anterior nos lleva directamente a ésta. Si tus objetos encapsulan el conjunto correcto de atributos pero el diseño sigue resultando incómodo quizá sea el momento de revisar si se están violando las reglas de la encapsulación. El comportamiento no acompañará a la instancia si podemos preguntar por los valores que ésta tiene el cualquier sitio. La idea de mantener la encapsulación dentro de unos límites fuerza a los programadores a dejar cada comportamiento en un único lugar dentro del modelo de objetos. Esto conlleva muchos efectos beneficiosos, tales como la reducción drástica de errores derivados de duplicar código y una mejor forma de localizar dónde es necesario realizar cambios para implementar nuevas características.
+
+Otra forma por la que se conoce comúnmente a esta regla es _"Dí, no preguntes"_
+
+
+<hr class="section-divider"/>
+
+
+# Conclusión
+
+7 de estas 9 reglas simplemente son formas de visualizar e implementar el Santo Grial de la programación orientada a objetos - la encapsulación de datos. Como extra, otra regla nos dirige a un uso apropiado de polimorfismo [eliminando el uso de ELSE y minimizando la lógica condicional], y la última no es más que una estrategia de nombrado que fuerza a mantener unos estándares concisos y directos - algo que no se use de forma irregular y que no permita la formación de abreviaturas. La meta que se persigue es la de escribir programas que no tenga duplicidades ni en código ni en ideas. El código conciso expresa abstracciones simples y elegantes con las que hacer frente a la complejidad inherente a los problemas con la que luchamos a diario.
+
+A largo plazo encontrarás situaciones en las que las reglas se contradicen las unas a las otras, o en las que la aplicación de las mismas generan unos malos resultados. Sin embargo, con el único objetivo de cumplir con el ejercicio, invierte 2 horas y 1.000 líneas de código en programar cumpliendo al 100% estas reglas. Tendrás que romper algunos viejos hábitos y cambiar la forma en la que has estado pensando en toda tu vida de programador. Cada una de las reglas ha sido elegida de tal modo que si la sigues te encontrarás con situaciones que no podrás resolver siguiendo los esquemas mentales que hayas usado habitualmente.
+
+Seguir estas reglas con disciplina te forzará a encontrar respuestas que te llevarán a entender mucho mejor qué es la programación orientada a objetos. Si escribes 100 líneas siguiendo estas reglas verás que has creado algo de una forma muy distinta a cómo lo habrías hecho habitualmente. Sigue estas reglas y prueba a ver dónde acabas. Si te encuentras incómodo, relaja algunas y busca un punto en el que te encuentres cómodo. Puede que descubras si sigues trabajando en ello que cada vez escribes más y más código que cumple con estas reglas sin tener que hacer ningún esfuerzo por tu parte.
+
+
+<hr class="section-divider"/>
+
+
+# Referencias
+
+* Traducción original: https://raulexposito.com/calistenia-de-objetos.html
+* Texto original: https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf
+
+  
+# Créditos
+
+- **Imagen de cabecera**: Fotografía por <a href="https://www.pexels.com/photo/person-lifting-barbell-indoors-2261485/" target="_blank">Pexels</a> de Victor Freitas con <a href="https://www.pexels.com/license/" target="_blank"_>licencia Pexels</a>.

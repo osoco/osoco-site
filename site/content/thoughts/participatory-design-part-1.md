@@ -112,6 +112,13 @@ Based on *Tangible User Interfaces* (TUI) technology, DynaClassroom will create 
 
 DynaClassroom is **a community space to shape the future learning environment where children become the protagonist of their own learning journey**.
 
+### Conclusion
+
+In conclusion, we believe that collaborating with children in the design of learning environments is a crucial step towards creating more inclusive and personalized educational settings. As designers, we should recognize the importance of involving children in decision-making processes that affect their daily lives and learning experiences.
+
+The DynaClassroom project is a work in progress, and we are looking forward to implementing the participatory design workshop with the children in the near future. By doing so, we hope to create a more meaningful and engaging learning environment that meets the needs and desires of the children.
+
+In summary, involving children in the design of learning environments could be an effective way to create more engaging and effective educational media. The DynaClassroom project is an opportunity to test the power of collaboration between children, designers and educators, and we are excited to continue working together to create an innovative and inclusive learning environment that empowers children to thrive.
 
 
 ### Picture Credits

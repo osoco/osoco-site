@@ -65,13 +65,6 @@ For those interested in conducting a participatory design workshop with children
 
 In the next post, we will share the results of this workshop; we will explain the current state of DynaClassroom and provide recommendations for qualitative analysis.
 
-
-### Picture Credits
-
-- **Header photo**: Picture by La-Rel Easter from <a href="https://unsplash.com/es/fotos/KuCGlBXjH_o" target="_blank">Unsplash</a>.
-- Picture by Amélie Mourichon from <a href="https://unsplash.com/es/fotos/wusOJ-2uY6w" target="_blank">Unsplash</a>.
-- Picture by Markus Spiske from <a href="https://unsplash.com/es/fotos/5sCMm4wi0Sg" target="_blank">Unsplash</a>.
-
 ### References
 
 [^1]: Hattie, J., & Yates, G. C. R. (2014). *Visible Learning and the Science of How We Learn*. Routledge. (This book provides an overview of the key challenges in education and explores effective teaching and learning strategies.)

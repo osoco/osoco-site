@@ -65,6 +65,10 @@ For those interested in conducting a participatory design workshop with children
 
 In the next post, we will share the results of this workshop; we will explain the current state of DynaClassroom and provide recommendations for qualitative analysis.
 
+<hr class="section-divider"/>
+
+This R&D project has received a financial grant from the [Immersive Content, Metaverse, and Web3 Projects Call](https://spainaudiovisualhub.mineco.gob.es/es/innovacion), organized by the Ministry of Economic Affairs and Digital Transformation, through the Secretary of State for Telecommunications and Digital Infrastructure.
+
 ### References
 
 [^1]: Hattie, J., & Yates, G. C. R. (2014). *Visible Learning and the Science of How We Learn*. Routledge. (This book provides an overview of the key challenges in education and explores effective teaching and learning strategies.)
@@ -74,3 +78,4 @@ In the next post, we will share the results of this workshop; we will explain th
 [^3]: Fullan, M. (2016). *The NEW Pedagogies of Deep Learning: Engage, Empower, Educate*. Thousand Oaks, CA: Corwin. (This book discusses the need to shift education towards deeper learning and explores the challenges and strategies for implementing innovative teaching practices.)
 
 [^4]: Pellegrino, J. W., & Hilton, M. L. (Eds.). (2012). *Education for Life and Work: Developing Transferable Knowledge and Skills in the 21st Century*. National Academies Press. (The report highlights the challenges in developing 21st-century skills and offers recommendations for educational practices that foster transferable knowledge and skills.)
+

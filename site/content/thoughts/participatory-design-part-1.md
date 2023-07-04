@@ -120,6 +120,10 @@ The DynaClassroom project is a work in progress, and we are looking forward to i
 
 In summary, involving children in the design of learning environments could be an effective way to create more engaging and effective educational media. The DynaClassroom project is an opportunity to test the power of collaboration between children, designers and educators, and we are excited to continue working together to create an innovative and inclusive learning environment that empowers children to thrive.
 
+<hr class="section-divider"/>
+
+This R&D project has received a financial grant from the [Immersive Content, Metaverse, and Web3 Projects Call](https://spainaudiovisualhub.mineco.gob.es/es/innovacion), organized by the Ministry of Economic Affairs and Digital Transformation, through the Secretary of State for Telecommunications and Digital Infrastructure.
+
 ### Picture Credits
 
 - **Header photo**: Picture by La-Rel Easter from <a href="https://unsplash.com/es/fotos/KuCGlBXjH_o" target="_blank">Unsplash</a>.

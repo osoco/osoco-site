@@ -8,8 +8,8 @@ authorPhotos = [ "paloma-domínguez.jpg" ]
 draft = "false"
 tags = [ "blue-plane", "osoco", "dynaclassroom", "design", "participatory-design", "thematic-analysis" ]
 summary = ""
-background = "workshop-children-group.jpg"
-backgroundSummary = "workshop-children-group.jpg"
+background = "participatory-design-part3-artifact.jpg"
+backgroundSummary = "participatory-design-part3-artifact.jpg"
 +++
 
 We are thrilled to bring you the eagerly awaited conclusion of our captivating series, chronicling the remarkable adventure of co-designing DynaClassroom alongside children. In this milestone post, we present a succinct yet illuminating overview of the workshop's outcomes, accompanied by invaluable insights into the qualitative analysis process that unfolded.

@@ -122,7 +122,10 @@ In summary, involving children in the design of learning environments could be a
 
 <hr class="section-divider"/>
 
-This R&D project has received a financial grant from the [Immersive Content, Metaverse, and Web3 Projects Call](https://spainaudiovisualhub.mineco.gob.es/es/innovacion), organized by the Ministry of Economic Affairs and Digital Transformation, through the Secretary of State for Telecommunications and Digital Infrastructure.
+This publication is part of the project *DynaClassroom* (FAV-010100-2022-30), funded by Ministerio para la Transformación Digital y de la Función Pública.
+
+Project FAV-010100-2022-30 funded by: {{<figure src="/images/thoughts/MTDFP.jpg" width="25%" alt="logotipo del Ministerio para la Transformación Digital y de la Función Pública.">}}
+
 
 ### Picture Credits
 

@@ -1,19 +1,22 @@
-import webpack from "webpack";
-import path from "path";
+const webpack = require("webpack");
+const path = require("path");
 
-export default {
+module.exports = {
   module: {
     loaders: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
         loader: "file?name=/[hash].[ext]"
       },
-      {test: /\.json$/, loader: "json-loader"},
+      {
+        test: /\.json$/,
+        loader: "json-loader"
+      },
       {
         loader: "babel",
         test: /\.js?$/,
         exclude: /node_modules/,
-        query: {cacheDirectory: true}
+        query: { cacheDirectory: true }
       }
     ]
   },
@@ -33,5 +36,6 @@ export default {
     publicPath: "/",
     filename: "[name].js"
   },
-  externals:  [/^vendor\/.+\.js$/]
+
+  externals: [/^vendor\/.+\.js$/]
 };

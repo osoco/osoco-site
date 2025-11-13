@@ -265,54 +265,5 @@ Thank you so much for your attention. I’d love to hear your questions or thoug
 
 {{<figure src="/images/thoughts/smalltalks2025-slides/1031.png" width="100%">}}
 
-## Referencias
-
-* **Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant**. W. Chan Kim. Renée Mauborgne. 2005. https://www.goodreads.com/book/show/4898.Blue_Ocean_Strategy
-* **Why software is eating the world**. Marc Andreessen. 2011. https://a16z.com/2011/08/20/why-software-is-eating-the-world/
-* **The long-term growth rate of evolving software: Empirical results and implications**. Hatton, L, Spinellis, D, van Genuchten, M. J Softw Evol Proc. 2017; 29:e1847. https://doi.org/10.1002/smr.1847
-* **Blue Plane**: https://blueplane.xyz/
-* Holzmann, **Landing a Spacecraft on Mars** in IEEE Software, vol. 30, no. 2, pp. 83-86, March-April 2013, doi: 10.1109/MS.2013.32. https://ieeexplore.ieee.org/document/6470593
-* L. Erlikh, **Leveraging legacy system dollars for e-business in IT Professional**, vol. 2, no. 3, pp. 17-23, May-June 2000. https://ieeexplore.ieee.org/document/846201
-* **Engineering a Safer World: Systems Thinking Applied to Safety**. Nancy G.
-Leveson. 2012. https://www.goodreads.com/book/show/13697424-engineering-a-safer-world
-* **Problem Frames: Analysing & Structuring Software Development Problems**. Michael A. Jackson. 2000. https://www.goodreads.com/book/show/292011.Problem_Frames
-* **Data and Reality**. Willian Kent. 2000. https://www.goodreads.com/book/show/1753248.Data_and_Reality
-* **Facts and Fallacies of Software Engineering**. Robert L. Glass. 2002. https://www.goodreads.com/book/show/83792.Facts_and_Fallacies_of_Software_Engineering
-* R. L. Glass, **Frequently forgotten fundamental facts about software
-engineering** in IEEE Software, vol. 18, no. 3, pp. 112-111, May-June 2001, doi:
-10.1109/MS.2001.922739. https://ieeexplore.ieee.org/document/922739
-* Thomas D. LaToza, Gina Venolia, and Robert DeLine. 2006. **Maintaining
-mental models: a study of developer work habits**. In Proceedings of the
-28th international conference on Software engineering (ICSE '06).
-Association for Computing Machinery, New York, NY, USA, 492–501. DOI:
-https://doi.org/10.1145/1134285.1134355
-* Roberto Minelli, Andrea Mocci and, and Michele Lanza. 2015. **I know what
-you did last summer: an investigation of how developers spend their time**.
-In Proceedings of the 2015 IEEE 23rd International Conference on Program
-Comprehension (ICPC '15). IEEE Press, 25–35.
-https://dl.acm.org/doi/10.5555/2820282.2820289
-* **Software Design Decoded: 66 Ways Experts Think**. Marian Petre, André van
-der Hoek, Yen Quach. 2002. https://www.goodreads.com/book/show/29889476-software-design-decoded
-* **Humane Assessment**:
-  * Web: https://moldabledevelopment.com/
-  * GToolkit: https://gtoolkit.com/
-  * Moldable Development en Curry On London 2019: https://www.youtube.com/watch?v=Pot9GnHFOVU
-  * Tesis Moldable Tools de Andreis Chis: http://scg.unibe.ch/archive/phd/chis-phd.pdf
-* **Pharo Smalltalk**:
-  * Curso de Pharo tipo MOOC: https://mooc.pharo.org/
-  * Libros gratuitos sobre Pharo: http://books.pharo.org/
-* **Roassal**:
-  * Web: http://agilevisualization.com/
-  * Libro *Agile Visualization with Pharo*: https://link.springer.com/book/10.1007/978-1-4842-7161-2
-* **Moose**:
-  * Web: https://moosetechnology.org/
-  * Moose Query: https://moosequery.ferlicot.fr/
-  
-
-
-
-## Créditos
-
-- **Imagen de cabecera**: Fotografía por <a href="https://pixabay.com/photos/tools-awl-pliers-antique-equipment-1083796/" target="_blank">dbreen</a> de pixaby.com con  <a href="https://pixabay.com/service/license/" target="_blank"_>licencia Pixabay</a>.
 
 

@@ -1,6 +1,5 @@
 +++
 title = "Introducing Behavioral Programming with Smalltalk"
-url = "smalltalks-2025"
 subtitle = "Smalltalks 2025"
 date = "2025-11-13T10:00:00Z"
 months = [ "2025-11" ]
@@ -13,11 +12,11 @@ background = "smalltalks2025-fiuba.jpg"
 backgroundSummary = "smalltalks2025-fiuba.jpg"
 +++
 
-This year we had the chance to participate in Smalltalks for the very first time, joining the 2025 edition in Buenos Aires. It turned out to be a wonderful experience—not only because of the conference itself, but also because it gave us the chance to meet a new community and share our work with people who genuinely love Smalltalk.
+This year we had the chance to participate in **[Smalltalks](https://smalltalks2025.fast.org.ar/)** for the very first time, joining the 2025 edition in Buenos Aires. It turned out to be a wonderful experience—not only because of the conference itself, but also because it gave us the chance to meet a new community and share our work with people who genuinely love Smalltalk.
 
-We were struck by the warmth, energy, and enthusiasm of the Argentine Smalltalk community. Powered by the FAST foundation, it’s an incredibly active and welcoming group, and getting to know its members was both inspiring and deeply enjoyable. Their passion for teaching, collaborating, and pushing the language forward made the whole event feel especially meaningful to us.
+We were struck by the warmth, energy, and enthusiasm of the Argentine Smalltalk community. Powered by the [FAST foundation](https://www.fast.org.ar/), it’s an incredibly active and welcoming group, and getting to know its members was both inspiring and deeply enjoyable. Their passion for teaching, collaborating, and pushing the language forward made the whole event feel especially meaningful to us.
 
-On a personal level, being there also felt like closing a long-running circle. More than 20 years ago, every book or article I read about the software engineering ideas that fascinated me—TDD, Refactoring, Agile, CRC Cards, OOP—kept leading back to the groundbreaking work of Alan Kay’s Smalltalk group at Xerox PARC in the ’70s and ’80s. Eventually, curiosity got the best of me and I bought a small Spanish-language book called **Programando con Smalltalk: Un ambiente de objetos vivos**, written by **Diego Gómez Deck**. He was an argentine Smalltalker working in Spain at the time, and although the book was short and introductory, it was exactly the spark I needed. It pushed me to start tinkering with Smalltalk (Squeak) and to dive deeper into the language.
+On a personal level, being there also felt like closing a long-running circle. More than 20 years ago, every book or article I read about the software engineering ideas that fascinated me —TDD, Refactoring, Agile, CRC Cards, OOP— kept leading back to [the groundbreaking work of Alan Kay’s Smalltalk group at Xerox PARC](https://worrydream.com/EarlyHistoryOfSmalltalk/) in the ’70s and ’80s. Eventually, curiosity got the best of me and I bought a small spanish book titled **Programando con Smalltalk: Un ambiente de objetos vivos**, written by [Diego Gómez Deck](https://x.com/DiegoGomezDeck). He was an argentine Smalltalker working in Spain at the time, and although the book was short and introductory, it was exactly the spark I needed. It pushed me to start tinkering with Smalltalk (Squeak) and to dive deeper into the language.
 
 {{<figure src="/images/thoughts/programando-con-smalltalk.jpg" width="25%">}}
 
@@ -29,7 +28,7 @@ And now, more than two decades later, getting to share a talk about Smalltalk in
 
 What if your program’s behavior scenarios —requirements or use cases— and your code could be one and the same? Behavioral Programming (BP), introduced by David Harel, makes this possible.
 
-In this talk, we’ll introduce the BP approach and explore it through practical examples implemented in Smalltalk.
+In this talk, we’ll introduce the BP approach and explore it through practical examples implemented in Smalltalk using our *Gt4Bp* library (for more information take a look at [its repository](https://github.com/isegorg/gt4bp)).
 
 ## Talk's Slides with Notes
 
@@ -51,9 +50,9 @@ Behavioral Programming is a new paradigm focused on building systems by composin
 
 BP is not a single tool. It's a researh line spanning over 25 years.
 
-BP builds on decades of research by David Harel and others. It started with a first paper about Live Sequence Charts by Werner Damm and David Harel on 1999. Then the book *"Come, Let's Play"* by David Harel and Rami Marelli on 2003. Then Scenario-Based Programming evolved into Behavioral Programming that was introduced in an article on 2010.
+BP builds on decades of research by David Harel and others. It started with a [first paper about Live Sequence Charts](https://www.weizmann.ac.il/math/harel/sites/math.harel/files/users/user50/LSCs.pdf) by Werner Damm and David Harel on 1999. Then the book *[Come, Let's Play](https://www.weizmann.ac.il/math/harel/come-lets-play)* by David Harel and Rami Marelli on 2003. Then Scenario-Based Programming evolved into [Behavioral Programming](https://dl.acm.org/doi/pdf/10.1145/2209249.2209270) that was introduced in an article on 2010.
 
-Finally, the wonderful BPjs tool suite were introduced on 2017 by a Ben-Gurion University research group. This is the BP engine we've currently integrated in our solution for Smalltalk.
+Finally, the wonderful [BPjs tool suite](https://github.com/bThink-BGU/BPjs) were introduced on 2017 by a Ben-Gurion University research group. This is the BP engine we've currently integrated in our solution for Smalltalk.
 
 {{<figure src="/images/thoughts/smalltalks2025-slides/1002.png" width="100%">}}
 
@@ -97,7 +96,7 @@ However, in traditional programming, we're basically forced to translate —both
 
 #### 2.5 The Two-End Tunnel Digging Metaphor
 
-David Harel described this tension with this metaphor that I believe is a very nice description of what software developers have been doing for decades...
+David Harel described this tension with [this metaphor](https://www.wisdom.weizmann.ac.il/~amarron/Runware%20-%20Harel%20Marron%20SoSyM2012.pdf) that I believe is a very nice description of what software developers have been doing for decades...
 
 {{<figure src="/images/thoughts/smalltalks2025-slides/1008.png" width="100%">}}
 
@@ -125,9 +124,9 @@ But, why the tunnel is so hard to complete.
 
 Several authors have written about the constraints of programming and how to liberate it.
 
-For example, John Backus in hist Turing Award lecture in 1977 titled "Can Programming Be Liberated from the von Neumann Style?".
+For example, John Backus in hist Turing Award lecture in 1977 titled *[Can Programming Be Liberated from the von Neumann Style?](https://dl.acm.org/doi/pdf/10.1145/359576.359579)*.
 
-In 2008 Harel published a pun intended essay titled "Can Programming Be Liberated, Period?". Not specifically from the von Neumann style, but simply liberating it in a more general way.
+In 2008 Harel published a pun intended essay titled *[Can Programming Be Liberated, Period?](https://www.weizmann.ac.il/math/harel/sites/math.harel/files/users/user50/LiberatingProgramming.pdf)*. Not specifically from the von Neumann style, but simply liberating it in a more general way.
 
 {{<figure src="/images/thoughts/smalltalks2025-slides/1011.png" width="100%">}}
 
@@ -213,7 +212,7 @@ Once all these declarations are collected, the engine then selects one event tha
 
 ### 5 Gt4Bp: When BP meets Smalltalk
 
-Gt4Bp is a very early prototype —a basic library that already allows us to execute and even verify Behavioral Programs directly from GToolkit.
+[Gt4Bp](https://github.com/isegorg/gt4bp) is a very early prototype —a basic library that already allows us to execute and even verify Behavioral Programs directly from GToolkit.
 
 Although it was initially developed inside GToolkit, it doesn’t rely heavily on GToolkit-specific features. So our next step is to evolve it into a generic Behavioral Programming library for all Smalltalk dialects, which we’re calling **Bp4St**.
 

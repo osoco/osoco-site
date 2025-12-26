@@ -1,6 +1,6 @@
 +++
 title = "Cuando el ordenador era un medio"
-subtitle = "Del Amiga 500 a Smalltalk"
+subtitle = "Del Amiga a Smalltalk"
 date = "2025-12-26T10:00:00Z"
 months = [ "2025-12" ]
 authors = [ "rafael-luque" ]
@@ -24,7 +24,7 @@ Años después, de manera inesperada, volví a sentir algo muy parecido al descu
 
 Explorar Smalltalk por primera vez fue, para mí, una experiencia sorprendentemente familiar. El sistema estaba siempre vivo. Todo podía inspeccionarse, modificarse, comprenderse desde dentro. No había un momento claro de "ejecución": **el entorno era el programa**.
 
-Aquella sensación de disfrute intelectual y creatividad —que creía ligada únicamente al Amiga de mi infancia— reapareció con fuerza. Y lo hizo en un contexto muy distinto: no desde el sonido y los gráficos, sino desde ideas, objetos y modelos conceptuales. La coincidencia no podía ser casual.
+Aquella sensación de disfrute intelectual y creatividad —que creía ligada únicamente al Amiga de mi infancia— reapareció con fuerza. Y lo hizo en un contexto muy distinto: no desde el sonido y los gráficos, sino desde las ideas, objetos y modelos conceptuales. La coincidencia no podía ser casual.
 
 Este ensayo parte de esa intuición: **el Amiga y Smalltalk comparten algo esencial**.
 
@@ -58,7 +58,7 @@ En ese contexto, el equipo del Amiga acudió a Atari en busca de financiación. 
 
 > “Pound for pound, I thought the Amiga was quite a bit better than the first Macintosh.”
 
-Kay destaca la ambición conceptual del Amiga, su comprensión realista del Motorola 68000 y la necesidad —claramente identificada— de hardware especializado para gráficos y multimedia (los famosos *custom chips* diseñados por Jay Miner). Todo ello sitúa al Amiga dentro de la misma línea intelectual que Smalltalk, aunque con un destino industrial muy distinto.
+Kay destaca la ambición conceptual del Amiga, su comprensión realista del Motorola 68000 y la necesidad —claramente identificada— de hardware especializado para gráficos y multimedia (los famosos *custom chips* diseñados por Jay Miner, *padre del Amiga*). Todo ello sitúa al Amiga dentro de la misma línea intelectual que Smalltalk, aunque con un destino industrial muy distinto.
 
 # Sistemas vivos y feedback inmediato
 
@@ -92,7 +92,7 @@ La relevancia del movimiento **demoscene** en la historia del Amiga no puede ent
 
 La demoscene surge gracias al diseño del Amiga, no a pesar de él. Programar demos implica dialogar directamente con el tiempo del sistema: sincronización con el barrido del monitor, coordinación precisa entre código, imagen y sonido, y explotación consciente de los coprocesadores gráficos y de audio. El feedback es inmediato, sensorial y rítmico.
 
-Si Smalltalk promueve una exploración conceptual del sistema mediante objetos e inspectors, la demoscene promueve una exploración temporal y material del mismo. La diferencia es de nivel de abstracción, no de intención. En ambos casos, el sistema no se oculta: se expone.
+Si Smalltalk promueve una exploración conceptual del sistema mediante objetos e inspectores, la demoscene promueve una exploración temporal y material del mismo. La diferencia es de nivel de abstracción, no de intención. En ambos casos, el sistema no se oculta: se expone.
 
 La demoscene llevó al límite la integración vertical del Amiga, convirtiendo hardware y software en material expresivo. En este sentido, actuó como un auténtico *stress test cultural* del sistema, demostrando que su arquitectura era no solo técnicamente avanzada, sino creativamente fértil.
 
@@ -102,7 +102,7 @@ Una lectura superficial podría situar tanto a Smalltalk como al Amiga en el ám
 
 Smalltalk sigue vivo en múltiples contextos industriales, educativos y de investigación. Numerosas empresas continúan utilizándolo para desarrollar y mantener sistemas críticos. Entornos contemporáneos como [Pharo](https://pharo.org/), [Squeak](https://squeak.org/) o [GToolkit](https://gtoolkit.com/), entre otros, demuestran que sus ideas fundamentales no solo persisten, sino que evolucionan.
 
-En este contexto, resulta relevante su uso en proyectos reales y productos actuales. En OSOCO, por ejemplo, empleamos descendientes de Smalltalk en distintos proyectos y productos para construir sistemas complejos, explorables y mantenibles, confirmando que los principios de sistemas vivos, feedback inmediato y coherencia conceptual **siguen siendo ventajas prácticas reales**.
+En este contexto, resulta relevante su uso en proyectos reales y productos actuales. En OSOCO, por ejemplo, empleamos descendientes de Smalltalk en distintos proyectos y productos para construir sistemas complejos, explorables y mantenibles, confirmando que los principios de sistemas vivos, feedback inmediato y coherencia conceptual **siguen ofreciendo ventajas prácticas reales**.
 
 Del mismo modo, la plataforma Amiga tampoco está muerta. Su comunidad continúa desarrollando software nuevo, sistemas operativos, herramientas y hardware —incluyendo aceleradoras, expansiones y arquitecturas FPGA— a un ritmo sorprendente. Más que nostalgia, esta actividad revela la robustez conceptual del *sistema como medio*.
 
@@ -122,5 +122,5 @@ Quizá el desafío actual no sea inventar nuevas metáforas para la computación
 [^3]: Commodore-Amiga, Inc. (1985). [*Amiga hardware reference manual*](/thoughts/refs/Amiga_Hardware_Reference_Manual_3rd_edition.pdf). Addison-Wesley.
 [^4]: Kay, A. Respuesta pública a: *"What does Alan Kay think about the Commodore Amiga (1985) as a multimedia computer or an appealing tool for artists? How does it compare with Alto or Star, or with Sierra machine Atari was working on as you were Chief Scientist at SRL?"* disponible en https://www.quora.com/What-does-Alan-Kay-think-about-the-Commodore-Amiga-1985-as-a-multimedia-computer-or-an-appealing-tool-for-artists-How-does-it-compare-with-Alto-or-Star-or-with-Sierra-machine-Atari-was-working-on-as-you-were-Chief
 [^5]: Garcia, C. [*Warhol & the Computer*](https://computerhistory.org/blog/warhol-the-computer/). CHM Blog. 2013.
-[^6]: [*The Andy Warhol Museum Amiga Exhibit *](https://www.iontank.com/projects/warhol-amiga)
+[^6]: [*The Andy Warhol Museum Amiga Exhibit*](https://www.iontank.com/projects/warhol-amiga)
 [^7]: Papert, S. (1980). *Mindstorms: Children, computers, and powerful ideas*. Basic Books.

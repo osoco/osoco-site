@@ -6,13 +6,13 @@ months = [ "2025-12" ]
 authors = [ "rafael-luque" ]
 authorPhotos = [ "rafael-luque.jpg" ]
 draft = "false"
-tags = [ "smalltalk", "amiga", "computer visions" ]
+tags = [ "smalltalk", "amiga", "computing vision" ]
 summary = ""
 background = "warhol-amiga-recreation-museum.jpg"
 backgroundSummary = "warhol-amiga-recreation-museum.jpg"
 +++
 
-Mi primer ordenador en casa fue un **Commodore Amiga 500**. Aún conservo una antigua fotografía del día que llegó a casa: mis hermanos y yo junto a aquella máquina que nos iba a abrir una puerta a otro mundo. No era tan sólo la novedad tecnológica. Había algo en el Amiga que invitaba a quedarse, a tocar, a probar, a experimentar.
+Mi primer ordenador fue un **Commodore Amiga 500**. Aún conservo una vieja fotografía del día que llegó a casa en 1989: mis hermanos y yo entusiasmados junto a aquella máquina que nos iba a abrir una puerta a otro mundo. No era tan sólo la novedad tecnológica. Había algo en el Amiga que invitaba a quedarse, a tocar, a probar, a experimentar.
 
 Con él aprendí a programar, a dibujar, a manipular sonido, a observar cómo pequeños cambios producían efectos inmediatos en la pantalla o en los altavoces. Todo parecía conectado. No había una frontera clara entre jugar y aprender, entre usar y crear. El ordenador no se presentaba como una herramienta distante, sino como un espacio vivo, reactivo, casi cómplice.
 
@@ -49,6 +49,8 @@ En ambos casos, el ordenador deja de ser un ejecutor pasivo de instrucciones y s
 # El Amiga en el "mundo post-Alto"
 
 La conexión conceptual entre Amiga y Smalltalk se vuelve explícita en los propios testimonios de Alan Kay [^4]. Tras abandonar Xerox PARC, Kay fue *Chief Scientist* de Atari entre 1982 y 1984, en un momento en el que varias compañías exploraban sistemas gráficos avanzados inspirados en Alto y Star.
+
+{{<figure src="/images/thoughts/AlanKay-with-Alto.png" width="50%" alt="Alan Kay usando un ordenador Alto">}}
 
 Según relata Kay, en Atari se desarrollaban ordenadores pensados para el "mundo post-Alto", pero la dirección de Warner Communications no supo valorar su importancia estratégica. El colapso del mercado del videojuego en 1983 reveló brutalmente esta miopía.
 

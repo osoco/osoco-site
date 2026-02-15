@@ -30,6 +30,10 @@ What if your program’s behavior scenarios —requirements or use cases— and 
 
 In this talk, we’ll introduce the BP approach and explore it through practical examples implemented in Smalltalk using our *Gt4Bp* library (for more information take a look at [its repository](https://github.com/isegorg/gt4bp)).
 
+## Talk's Video
+
+{{< youtube kX3zJMH5DEY >}}
+
 ## Talk's Slides with Notes
 
 Welcome to this talk about a different way of thinking about software —one that is closer to how we naturally understand and describe behavior, rather than how we usually code it.

@@ -1,91 +1,71 @@
-# Victor Hugo
+# osoco-site
 
-**A [Hugo](https://gohugo.io/) boilerplate for creating truly epic websites**
+Sitio web de OSOCO (https://osoco.es), generado como sitio estático con
+[Hugo](https://gohugo.io/) y un tema propio (`site/themes/hugo-osoco-theme`).
+Cada push a `master` dispara la construcción y publicación en Netlify.
 
-This is a boilerplate for using Hugo as a static site generator and Gulp + Webpack as your
-asset pipeline.
+## Requisito: Hugo 0.30.2 (exactamente)
 
-It's setup to use post-css and babel for CSS and JavaScript.
+El sitio y el tema son de la era de Hugo 0.30 (2017) y **no compilan con
+versiones modernas de Hugo** (cambios en plantillas, taxonomías y motor de
+Markdown). Hay que usar el binario 0.30.2, el mismo que usa Netlify.
 
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
-
-## Usage
-
-Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/) installed. If you need to install hugo on OSX, run:
-
-```bash
-brew install hugo
-```
-
-If you don't use OSX or don't use homebrew, follow the instructions for installation here instead:
-
-http://gohugo.io/overview/installing/
-
-Next, clone this repository and run:
+Instalación en Linux (una sola vez):
 
 ```bash
-npm install
-npm start
+curl -sSL -o /tmp/hugo.tgz https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2_Linux-64bit.tar.gz
+tar -xzf /tmp/hugo.tgz -C /tmp hugo
+install -m 755 /tmp/hugo ~/.local/bin/hugo-0.30
 ```
 
-Then visit http://localhost:3000/ - BrowserSync will automatically reload CSS or
-refresh the page when stylesheets or content changes.
+Se instala como `hugo-0.30` para no interferir con un Hugo moderno que
+pueda haber en el sistema.
 
-To build your static output to the `/dist` folder, use:
+## Desarrollo en local
 
 ```bash
-npm run build
+cd site
+hugo-0.30 server
 ```
 
-## Structure
+Y abrir http://localhost:1313. El servidor recarga el navegador
+automáticamente al editar contenido o plantillas. Opciones útiles:
 
-```
-|--site                // Everything in here will be built with hugo
-|  |--content          // Pages and collections - ask if you need extra pages
-|  |--data             // YAML data files with any data for use in examples
-|  |--layouts          // This is where all templates go
-|  |  |--partials      // This is where includes live
-|  |  |--index.html    // The index page
-|  |--static           // Files in here ends up in the public folder
-|--src                 // Files that will pass through the asset pipeline
-|  |--css              // CSS files in the root of this folder will end up in /css/...
-|  |--js               // app.js will be compiled to /app.js with babel
-```
+- `hugo-0.30 server --buildDrafts --buildFuture` — ver borradores y posts con fecha futura.
+- `hugo-0.30 -s site -d dist` (desde la raíz) — solo generar el sitio estático.
 
-## Basic Concepts
+## Añadir un post
 
-You can read more about Hugo's template language in their documentation here:
+1. Crear `site/content/thoughts/<slug>.md` con front matter TOML (ver
+   cualquier post existente como plantilla: `title`, `subtitle`, `date`,
+   `months`, `authors`/`authorPhotos`, `tags`, `summary`, `background`,
+   `backgroundSummary`).
+2. Las imágenes van en `site/static/images/thoughts/` y se insertan con
+   `{{< figure src="/images/thoughts/..." >}}`. Los campos `background` y
+   `backgroundSummary` (banner y miniatura del listado) también se sirven
+   desde ese directorio.
+3. Las URLs siguen el patrón `/thoughts/:year/:month/:title/`, derivado del
+   **título**. Si dos posts comparten título (p. ej. versiones en dos
+   idiomas), fijar la URL con `url = "..."` en el front matter para evitar
+   colisiones.
+4. Referencias bibliográficas: notas al pie `[^n]` en el texto y sección
+   final `# Referencias` (ver `amiga-smalltalk.md` o
+   `as-we-may-think-software.md` como ejemplo, este último también del
+   patrón bilingüe con enlaces cruzados entre idiomas).
 
-https://gohugo.io/templates/overview/
+## Despliegue (Netlify)
 
-The most useful page there is the one about the available functions:
+Configurado en `netlify.toml`: ejecuta `scripts/netlify-build.sh`, que
+descarga el binario de Hugo 0.30.2 y construye `site/` → `dist/`.
 
-https://gohugo.io/templates/functions/
+No se puede usar la variable `HUGO_VERSION` de Netlify: su sistema de
+instalación actual (mise) solo conoce la variante *hugo-extended*, que no
+existe para versiones tan antiguas, y falla con un 404.
 
-For assets that are completely static and don't need to go through the asset pipeline,
-use the `site/static` folder. Images, font-files, etc, all go there.
+## Nota histórica: pipeline npm/gulp
 
-Files in the static folder ends up in the web root. So a file called `site/static/favicon.ico`
-will end up being available as `/favicon.ico` and so on...
-
-The `src/js/app.js` file is the entrypoint for webpack and will be built to `/dist/app.js`.
-
-You can use ES6 and use both relative imports or import libraries from npm.
-
-Any CSS file directly under the `src/css/` folder will get compiled with [PostCSS Next](http://cssnext.io/)
-to `/dist/css/{filename}.css`. Import statements will be resolved as part of the build
-
-## Deploying to netlify
-
-- Push your clone to your own GitHub repository.
-- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
-
-Now netlify will build and deploy your site whenever you push to git.
-
-You can also click this button:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eliwilliamson/victor-hugo)
-
-
-
-## Enjoy!!
+El repo nació del boilerplate "Victor Hugo" (Hugo + Gulp + Webpack). Ese
+pipeline (`package.json`, `gulpfile.js`, `src/`) es **vestigial**: nada del
+sitio publicado referencia su salida (`app.js`, `dist/css/*`). Los CSS y JS
+reales viven en `site/themes/hugo-osoco-theme/static/`. No hace falta Node
+ni `npm install` para trabajar con el sitio.

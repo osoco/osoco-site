@@ -1,8 +1,6 @@
 [build]
-  command = "npm run build"
+  command = "bash scripts/netlify-build.sh"
   publish = "dist"
-  HUGO_VERSION = "0.30.2"
 
 [context.deploy-preview]
-  command = "npm run build-preview"
-  HUGO_VERSION = "0.30.2"
+  command = "bash scripts/netlify-build.sh --buildDrafts --buildFuture"

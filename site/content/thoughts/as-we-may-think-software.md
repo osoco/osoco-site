@@ -65,7 +65,7 @@ El lugar no era un laboratorio. Era más bien un estudio de diseño o un taller 
 
 Una pared entera era blanca, pero no era un lienzo pasivo: reaccionaba como lo hacen las cosas cuando sirven para pensar. Las mesas eran enormes, como las mesas de un taller de carpintería, y estaban llenas de objetos corrientes: cajas de cartón, fichas de madera, un móvil viejo, una cinta métrica, un ticket impreso. Había también herramientas que parecían de oficina —rotuladores, tarjetas de papel, tijeras— salvo por un detalle: cuando alguien las tocaba, el espacio respondía con luz, texto y movimiento, como si los objetos fueran parte del sistema nervioso de aquel lugar.
 
-{{<figure src="/images/thoughts/as-we-may-think-software-workshop.jpg" width="80%" alt="El taller de Atelier: mesas grandes con objetos cotidianos que responden con luz, texto y movimiento">}}
+{{<figure src="/images/thoughts/as-we-may-think-software-workshop.jpg" width="80%" alt="El taller de Atelier: mesas grandes con objetos cotidianos que responden con luz, texto y movimiento" caption="El taller de Atelier: mesas de carpintero y objetos cotidianos con capas digitales proyectadas. Imagen conceptual generada mediante IA.">}}
 
 Más tarde nos explicarían que aquello no era “realidad aumentada” en el sentido de gafas y dispositivos personales, sino un tipo de computación espacial que proyectaba información sobre superficies y dotaba de comportamiento a materiales cotidianos, inspirada por ideas como las de Dynamicland: un “medio dinámico” para que personas reales exploren ideas juntas en el mundo real [^2].
 
@@ -116,7 +116,7 @@ Debajo aparecieron dos tarjetas:
 - **Entregado (operaciones):** “el caso se cierra; no requiere acción”.
 - **Entregado (cliente):** “el objeto está en manos del destinatario”.
 
-{{<figure src="/images/thoughts/as-we-may-think-software-wall.jpg" width="80%" alt="La pared blanca proyecta las dos definiciones incompatibles de «entregado»">}}
+{{<figure src="/images/thoughts/as-we-may-think-software-wall.jpg" width="80%" alt="La pared blanca proyecta las dos definiciones incompatibles de «entregado»" caption="La pared del taller hace visible el desacuerdo: dos definiciones incompatibles de «entregado». Imagen conceptual generada mediante IA.">}}
 
 Sentí algo extraño: el tipo de vergüenza que no viene de cometer un error, sino de descubrir que llevabas años ignorando un error estructural. En mi mundo, esas dos definiciones habrían coexistido sin hablarse. Una en tickets y métricas; otra en llamadas de soporte y enfado. Aquí el sistema las había obligado a mirarse a los ojos.
 
@@ -178,7 +178,7 @@ Si yo escribiera el taller como “computación espacial” y “realidad aument
 
 En Atelier no había “pantalla principal”. El taller era el ordenador: mesas grandes, paredes, superficies donde objetos físicos cotidianos convivían con capas digitales superpuestas. El dominio entraba en el espacio como materia —paquetes, etiquetas, formularios, planos, citas, reglas, excepciones. Y el software no aparecía como texto, sino como comportamiento que se podía señalar y mover.
 
-{{<figure src="/images/thoughts/as-we-may-think-software-table.jpg" width="80%" alt="La mesa del taller como superficie de simulación continua del dominio">}}
+{{<figure src="/images/thoughts/as-we-may-think-software-table.jpg" width="80%" alt="La mesa del taller como superficie de simulación continua del dominio" caption="La mesa como superficie de simulación continua: el paquete real y sus consecuencias proyectadas. Imagen conceptual generada mediante IA.">}}
 
 Adele lo resumió con una frase que anoté literalmente:
 
@@ -321,7 +321,7 @@ En la pared habían dejado cuatro líneas sencillas:
 - Aprendizaje como construcción.
 - Programación como teoría distribuida.
 
-{{<figure src="/images/thoughts/as-we-may-think-software-manifesto.jpg" width="80%" alt="El manifiesto del taller: cuatro líneas escritas a mano en la pared">}}
+{{<figure src="/images/thoughts/as-we-may-think-software-manifesto.jpg" width="80%" alt="El manifiesto del taller: cuatro líneas escritas a mano en la pared" caption="El manifiesto del taller y las dos columnas «Lo que creemos» / «Lo que vimos». Imagen conceptual generada mediante IA.">}}
 
 No mencionaron nombres para impresionar. Pero el aire olía a esa tradición. La idea de que el ordenador no es una máquina de escribir mejorada, sino un medio que puede cambiar la forma en que razonamos; la idea de que aprender es construir modelos con los que pensar; la idea de que el software puede ser un material social.
 

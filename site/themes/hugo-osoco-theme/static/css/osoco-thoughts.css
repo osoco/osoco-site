@@ -846,3 +846,11 @@ figcaption h4 {
     height: auto;
   }
 }
+
+/* Pies de imagen de las figuras de los posts */
+.content figure figcaption p {
+  font-size: 0.9em;
+  font-style: italic;
+  max-width: 80%;
+  margin: 0.5em auto 0;
+}

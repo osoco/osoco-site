@@ -15,7 +15,7 @@ url = "/thoughts/2026/01/as-we-may-think-software-en/"
 
 *This post is also available in Spanish: [Cómo podríamos pensar el software (versión en español)](/thoughts/2026/01/as-we-may-think-software/).*
 
-*You can also download this essay as a [PDF](/thoughts/refs/as-we-may-think-software-en.pdf).*
+*You can also download this essay as a [PDF](https://github.com/osoco/atelier-essay/releases/latest/download/as-we-may-think-software-en.pdf).*
 
 <hr class="section-divider"/>
 

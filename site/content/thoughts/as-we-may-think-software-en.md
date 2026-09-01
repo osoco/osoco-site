@@ -65,7 +65,7 @@ It wasn’t a laboratory. It was closer to a design studio.
 
 One entire wall was white, but it wasn’t a passive canvas. It reacted the way things do when they’re used for thinking. The tables were enormous—carpenter’s-bench huge—and covered with ordinary objects: cardboard boxes, small wooden tokens, an old phone, a tape measure, a printed receipt. There were also what looked like office supplies—markers, paper cards, scissors—except for one detail: when someone touched them, the room answered with light, text, and motion, as if these objects were part of the place’s nervous system.
 
-{{<figure src="/images/thoughts/as-we-may-think-software-workshop.jpg" width="60%" alt="The Atelier workshop: large tables with everyday objects that answer with light, text, and motion">}}
+{{<figure src="/images/thoughts/as-we-may-think-software-workshop.jpg" width="80%" alt="The Atelier workshop: large tables with everyday objects that answer with light, text, and motion">}}
 
 Later, they would explain that this wasn’t “augmented reality” in the sense of headsets and personal devices, but a kind of spatial computing that projected information onto shared surfaces and gave behavior to everyday materials—an approach inspired by ideas like Dynamicland: a “dynamic medium” for real people to explore ideas together in the real world [^2].
 
@@ -116,7 +116,7 @@ Beneath it, two cards appeared—also projected:
 - **Delivered (operations):** “The case is closed; no action required”.
 - **Delivered (customer):** “The object is in the recipient’s hands”.
 
-{{<figure src="/images/thoughts/as-we-may-think-software-wall.jpg" width="60%" alt="The white wall projects the two incompatible definitions of “delivered”">}}
+{{<figure src="/images/thoughts/as-we-may-think-software-wall.jpg" width="80%" alt="The white wall projects the two incompatible definitions of “delivered”">}}
 
 I felt an odd kind of embarrassment—not because I’d made a mistake, but because I recognized a structural mistake I’d been living with for years. In my world, those two definitions coexist without meeting: one in tickets and dashboards, the other in angry calls and lived experience. Here, the system forced them to look at each other.
 
@@ -180,7 +180,7 @@ If I wrote “spatial computing” and “augmented reality” as the main descr
 
 There was no “main screen.” The workshop was the computer: large tables, open walls, and shared surfaces where everyday objects lived alongside projected layers. The domain entered as matter—packages, labels, receipts, maps, rules, exceptions. Software didn’t appear first as text. It appeared as behavior you could point to, move, and run through scenarios.
 
-{{<figure src="/images/thoughts/as-we-may-think-software-table.jpg" width="60%" alt="The workshop table as a surface of continuous simulation of the domain">}}
+{{<figure src="/images/thoughts/as-we-may-think-software-table.jpg" width="80%" alt="The workshop table as a surface of continuous simulation of the domain">}}
 
 Adele summarized it in a line I copied verbatim:
 
@@ -323,7 +323,7 @@ On the wall were four lines:
 - Learning as construction.
 - Programming as a distributed theory.
 
-{{<figure src="/images/thoughts/as-we-may-think-software-manifesto.jpg" width="60%" alt="The workshop manifesto: four handwritten lines on the wall">}}
+{{<figure src="/images/thoughts/as-we-may-think-software-manifesto.jpg" width="80%" alt="The workshop manifesto: four handwritten lines on the wall">}}
 
 They didn’t drop names to impress us. And yet the air smelled like that tradition: the idea that the computer is not an upgraded typewriter, but a medium that can change how we reason; the idea that learning is building models you can think with; the idea that software can be a social material.
 

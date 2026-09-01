@@ -836,3 +836,13 @@ figcaption h4 {
     font-size: 1em;
 }
 
+
+/* Figuras de los posts: el atributo width del shortcode figure
+   (p. ej. width="60%") solo aplica en pantallas anchas; en pantallas
+   pequeñas la imagen ocupa todo el ancho del contenido. */
+@media only screen and (max-width: 768px) {
+  .content figure img {
+    width: 100%;
+    height: auto;
+  }
+}

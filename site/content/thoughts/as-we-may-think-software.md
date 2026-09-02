@@ -15,7 +15,7 @@ url = "/thoughts/2026/01/as-we-may-think-software/"
 
 *Este artículo también está disponible en inglés: [As We May Think Software (English version)](/thoughts/2026/01/as-we-may-think-software-en/).*
 
-*También puedes descargar este ensayo en [formato PDF](https://github.com/osoco/atelier-essay/releases/latest/download/as-we-may-think-software-es.pdf).*
+*También puedes descargar este ensayo en [formato PDF](https://github.com/osoco/atelier-essay/releases/latest/download/As_We_May_Think_Software-ES.pdf).*
 
 <hr class="section-divider"/>
 
